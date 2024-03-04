@@ -74,13 +74,13 @@ class SNAIL():
         ind = np.arange(dimension - 1)
         hamiltonian_mat[ind, ind + 1] = -self.N * self.EJ / 2.0
         hamiltonian_mat[ind + 1, ind] = -self.N * self.EJ / 2.0
-        ind = np.arange(dimension - 3)
-        hamiltonian_mat[ind, ind + 3] = -self.beta * np.exp(1j * self.flux * 2 * np.pi) * self.EJ / 2.0
-        hamiltonian_mat[ind + 3, ind] = -self.beta * np.exp(-1j * self.flux * 2 * np.pi) * self.EJ / 2.0
+        ind = np.arange(dimension - self.N)
+        hamiltonian_mat[ind, ind + self.N] = -self.beta * np.exp(1j * self.flux * 2 * np.pi) * self.EJ / 2.0
+        hamiltonian_mat[ind + self.N, ind] = -self.beta * np.exp(-1j * self.flux * 2 * np.pi) * self.EJ / 2.0
         return hamiltonian_mat
 
     def _U_s(self, phi):
-        return (-self.beta * np.cos(phi - self.phi_ex) - 3 * np.cos((phi) / 3))
+        return (-self.beta * np.cos(phi - self.phi_ex) - self.N * np.cos((phi) / self.N))
 
     def plot_potential(self):
         phi = np.linspace(-1.5, 1.5, 1000) * 2 * np.pi
@@ -144,7 +144,7 @@ class SNAIL():
 
 
 class SNAIL_sweep(SNAIL):
-    def __init__(self, snail_object):
+    def __init__(self, snail_object, fluxs):
         self.EJ = snail_object.EJ
         self.EC = snail_object.EC
         self.beta = snail_object.beta
@@ -153,7 +153,7 @@ class SNAIL_sweep(SNAIL):
         self.flux = snail_object.flux
         self.truncated_dim = snail_object.truncated_dim
         self.N = snail_object.N
-        self.fluxs = np.linspace(0.4, 0.5, 10)
+        self.fluxs = fluxs
         self.g3s = []
         self.g4s = []
         self.g5s = []
@@ -163,6 +163,7 @@ class SNAIL_sweep(SNAIL):
         self.bare_omegass = []
         self.omegass = []
         self.anhs = []
+        self.spectrums = []
         self.quantities_sweep()
 
     def quantities_sweep(self):
@@ -180,6 +181,7 @@ class SNAIL_sweep(SNAIL):
             anh = H[2, 2] - 2 * H[1, 1]
             (self.omegass).append(omegass)
             (self.anhs).append(anh)
+            self.spectrums.append(H)
 
 
 class Cavity():
@@ -207,12 +209,12 @@ class SNAILC(SNAIL):
     def __init__(self,
                  snail_object,
                  cavity_object,
-                 truncated_dim=100
+                 truncated_dim = None
                  ) -> None:
         self.snail = snail_object
         self.cavity = cavity_object
         self.hamiltonian()
-        self.truncated_dim = truncated_dim
+        self.truncated_dim = self.snail.truncated_dim * self.cavity.truncated_dim
 
     def hamiltonian(self):
         snail = self.snail
@@ -252,21 +254,22 @@ class SNAILC(SNAIL):
 
         index = np.argmin(np.abs(energy - snail.omegas * np.ones(len(energy))))
         omega_sp = energy[index]
+
         index = np.argmin(np.abs(energy - 2 * cavity.cavity_freq * np.ones(len(energy))))
         selfkerr = energy[index] - 2 * omega_cp
 
         index = np.argmin(np.abs(energy - cavity.cavity_freq * np.ones(len(energy)) - snail.omegas))
-        starkshift = energy[index] - cavity.cavity_freq - omega_sp
+        starkshift = energy[index] - omega_cp - omega_sp
 
         index = np.argmin(np.abs(energy - 2 * cavity.cavity_freq * np.ones(len(energy)) - snail.omegas))
-        sc_crosskerr = energy[index] - 2 * cavity.cavity_freq - omega_sp - 2 * starkshift
+        sc_crosskerr = energy[index] - 2 * omega_cp - omega_sp - 2 * starkshift - selfkerr
 
-        return omega_cp, starkshift, selfkerr, sc_crosskerr
+        return energy, omega_cp, omega_sp, starkshift, selfkerr, sc_crosskerr
 
 
 class SNAILC_sweep(SNAILC):
-    def __init__(self, snailc_object, ):
-        self.fluxs = np.linspace(0.4, 0.5, 10)
+    def __init__(self, snailc_object, fluxs):
+        self.fluxs = fluxs
         self.snail = snailc_object.snail
         self.cavity = snailc_object.cavity
         self.selfkers = []
@@ -275,22 +278,28 @@ class SNAILC_sweep(SNAILC):
         self.omegac = []
         self.g_ints = []
         self.apps = []
+        self.omegas = []
+        self.snailc = snailc_object
+        self.spectrums = []
 
     def quantities_sweep(self):
         cavity = self.cavity
         snail = self.snail
+        snailc = self.snailc
         for flux in self.fluxs:
             snail_back = SNAIL(snail.EJ, snail.EC, snail.beta, snail.ng, snail.ncut, flux, snail.N, snail.truncated_dim)
-            snailc_back = SNAILC(snail_back, self.cavity)
-            omega_c, starkshift, selfkerr, sc_crosskerr = snailc_back.parameters()
+            snailc_back = SNAILC(snail_back, cavity, snailc.truncated_dim)
+            spectrum, omega_c, omega_s, starkshift, selfkerr, sc_crosskerr = snailc_back.parameters()
+            self.spectrums.append(spectrum)
             self.omegac.append(omega_c)
+            self.omegas.append(omega_s)
             self.starkshifts.append(starkshift)
             self.selfkers.append(selfkerr)
             self.sc_crosskerrs.append(sc_crosskerr)
             self.g_ints.append(snailc_back.g_intr)
             self.apps.append(
                 cavity.cavity_freq + snailc_back.g_intr ** 2 / (cavity.cavity_freq - snail_back.bare_omegas))
-        return self.omegac, self.starkshifts, self.selfkers, self.sc_crosskerrs, self.apps
+        return self.omegac, self.omegas, self.starkshifts, self.selfkers, self.sc_crosskerrs, self.apps
 
 
 class SNAILCC(SNAIL):
@@ -325,12 +334,12 @@ class SNAILCC(SNAIL):
         c2 = snail.bare_omegas ** 2 / 8 / snail.EC / snail.EJ
         self.g_intr = cavity2.g_int * 2 * ((2 * snail.EC / snail.EJ / c2) ** 0.25)
         H = Hsc + Hc + H_int
-        return H
+        return H, np.kron(dressed_charge, Ic)
 
     def parameters(self):
         cavity1 = self.cavity1
         cavity2 = self.cavity2
-        H = self.hamiltonian()
+        H, charge = self.hamiltonian()
         energy, dressed_states = np.linalg.eigh(H)
         energy = np.real(energy - energy[0] * np.ones(len(energy)))
 
@@ -342,12 +351,12 @@ class SNAILCC(SNAIL):
 
         index = np.argmin(np.abs(energy - omega_cp2 - omega_cp1))
         cross_kerr = energy[index] - omega_cp1 - omega_cp2
-        return cross_kerr, self.snailc1_paras, self.snailc2_paras
+        return energy, cross_kerr, self.snailc1_paras, self.snailc2_paras
 
 
 class SNAILCC_sweep(SNAILCC):
-    def __init__(self, snailcc_object, ):
-        self.fluxs = np.linspace(0.4, 0.5, 10)
+    def __init__(self, snailcc_object,fluxs ):
+        self.fluxs = fluxs
         self.snail = snailcc_object.snail
         self.cavity1 = snailcc_object.cavity1
         self.cavity2 = snailcc_object.cavity2
@@ -367,6 +376,7 @@ class SNAILCC_sweep(SNAILCC):
         self.omegac2 = []
         self.g_ints2 = []
         self.apps2 = []
+        self.spectrums = []
 
     def quantities_sweep(self):
         snail = self.snail
@@ -378,26 +388,25 @@ class SNAILCC_sweep(SNAILCC):
             snailcc_back = SNAILCC(snail_back, cavity1, cavity2)
             snailc1 = snailcc_back.snailc1
             snailc2 = snailcc_back.snailc2
-            cross_kerr, snailc1_paras, snailc2_paras = snailcc_back.parameters()
+            spectrum, cross_kerr, snailc1_paras, snailc2_paras = snailcc_back.parameters()
             self.crosskerr.append(cross_kerr)
-
-            self.omegac1.append(snailc1_paras[0])
-            self.starkshifts1.append(snailc1_paras[1])
-            self.selfkers1.append(snailc1_paras[2])
-            self.sc_crosskerrs1.append(snailc1_paras[3])
+            self.spectrums.append(spectrum)
+            self.omegac1.append(snailc1_paras[1])
+            self.starkshifts1.append(snailc1_paras[2])
+            self.selfkers1.append(snailc1_paras[3])
+            self.sc_crosskerrs1.append(snailc1_paras[4])
             self.g_ints1.append(snailc1.g_intr)
             self.apps1.append(
                 cavity1.cavity_freq + snailc1.g_intr ** 2 / (cavity1.cavity_freq - snail_back.bare_omegas))
-            snailc1_paras = [self.omegac1, self.starkshifts1, self.selfkers1, self.sc_crosskerrs1, self.g_ints1,
-                             self.apps1]
-
-            self.omegac2.append(snailc2_paras[0])
-            self.starkshifts2.append(snailc2_paras[1])
-            self.selfkers2.append(snailc2_paras[2])
-            self.sc_crosskerrs2.append(snailc2_paras[3])
+            self.omegac2.append(snailc2_paras[1])
+            self.starkshifts2.append(snailc2_paras[2])
+            self.selfkers2.append(snailc2_paras[3])
+            self.sc_crosskerrs2.append(snailc2_paras[4])
             self.g_ints2.append(snailc2.g_intr)
             self.apps2.append(
                 cavity2.cavity_freq + snailc2.g_intr ** 2 / (cavity2.cavity_freq - snail_back.bare_omegas))
-            snailc2_paras = [self.omegac2, self.starkshifts2, self.selfkers2, self.sc_crosskerrs2, self.g_ints2,
+        snailc1_paras = [self.omegac1, self.starkshifts1, self.selfkers1, self.sc_crosskerrs1, self.g_ints1,
+                         self.apps1]
+        snailc2_paras = [self.omegac2, self.starkshifts2, self.selfkers2, self.sc_crosskerrs2, self.g_ints2,
                              self.apps2]
         return self.crosskerr, snailc1_paras, snailc2_paras
