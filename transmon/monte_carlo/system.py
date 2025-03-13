@@ -153,7 +153,6 @@ def calculate_floquet_energies(A, omega,H0, Hc):
             if overlap > max_overlaps[b_index]:
                 max_overlaps[b_index] = overlap
                 max_overlap_indices[b_index] = f_index
-
     # Calculate energies
     energy00 = f_energies[max_overlap_indices[0]] / (2 * np.pi)
 
