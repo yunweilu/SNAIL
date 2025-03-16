@@ -93,7 +93,7 @@ def generate_noise_trajectory(sample_rate=1, t_max=200, relative_PSD_strength=(1
     filtered_trajectory = np.cumsum(filtered_freq_shifts) * dt
     
     # Calculate PSD
-    freq_y_vals = fft(filtered_freq_shifts)
+    freq_y_vals = fft(filtered_freq_shifts)/N
     freq_psd_vals = np.abs(freq_y_vals[:N//2])**2
     
     return t_list, filtered_freq_shifts, filtered_trajectory, freq_x_vals[:N//2], freq_psd_vals 
