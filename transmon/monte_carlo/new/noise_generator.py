@@ -131,7 +131,7 @@ class GenerateNoise:
         
             
         # Add S0 to the plot title for clarity
-        plt.title(f'Average PSD of {self.noise_type} (S0={S0:.2e})')
+        plt.title(f'Average PSD of {self.noise_type} ')
         plt.tight_layout()
         plt.show()
         # Return S0 value for 1/f noise
