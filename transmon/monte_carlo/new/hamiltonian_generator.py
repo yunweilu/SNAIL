@@ -318,9 +318,9 @@ class Hamiltonian:
             evals, U = sort_eigenpairs(f_energies,f_modes)
             Ud = U.T.conj()
 
-            return U, U@self.sigmaxc@Ud
+            return U, U@self.sigmaxc@Ud, U@self.sigmaxs@Ud
 
-        U, sigmax = state_and_sigmax(0)
+        U, _, _ = state_and_sigmax(0)
         initial_state = np.sqrt(1/2)*(U[:,0] + U[:,1])
         # initial_state = U[:,0]
         
