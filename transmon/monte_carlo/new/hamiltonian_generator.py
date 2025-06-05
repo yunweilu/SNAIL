@@ -91,7 +91,7 @@ class Hamiltonian:
     
     def get_H(self):
         #if we want to use scqubits, replace Hs,charge_op with the ones obtained from scqubits
-        Hs,charge_op, phi_zpf, noise = SNAIL(self.phi_ex, self.beta, self.N, self.Ej, self.Ec)
+        Hs,charge_op, phi_zpf, noise, s = SNAIL(self.phi_ex, self.beta, self.N, self.Ej, self.Ec)
         self.Hs = Hs
         squid = [Hs,charge_op]
         cavity = scqubits.Oscillator(
@@ -101,7 +101,7 @@ class Hamiltonian:
         Hc = np.diag(cavity.eigenvals() - cavity.eigenvals()[0])*2*np.pi
         Vc = cavity.creation_operator() + cavity.annihilation_operator()
         cavity = [Hc,Vc]
-        H,H_control,noise = composite_sys(squid,cavity,noise)
+        H,H_control,noise, s = composite_sys(squid,cavity,noise, s)
         evals,U = np.linalg.eigh(H)
         evals,U = sort_eigenpairs(evals,U)
         evals = evals - evals[0]
@@ -114,7 +114,7 @@ class Hamiltonian:
         self.chi = evals[self.cdim+1] - evals[self.cdim] - evals[1]
         self.anh = evals[2*self.cdim] - 2*evals[self.cdim]
         self.phi_zpf = phi_zpf
-        self.H, self.H_control = H,H_control
+        self.H, self.H_control, self.s = H,H_control, s
         self.noise = noise
 
         cavity_sigmax = np.zeros((self.cdim, self.cdim))
@@ -132,7 +132,7 @@ class Hamiltonian:
         
     def get_H_der(self):
         original_phi = self.phi_ex
-        Hs,charge_op, phi_zpf,noise = SNAIL(self.phi_ex+self.epsilon, self.beta, self.N, self.Ej, self.Ec)
+        Hs,charge_op, phi_zpf,noise, s = SNAIL(self.phi_ex+self.epsilon, self.beta, self.N, self.Ej, self.Ec)
         squid = [Hs,charge_op]
         cavity = scqubits.Oscillator(
             E_osc=5.226,
@@ -141,7 +141,7 @@ class Hamiltonian:
         Hc = np.diag(cavity.eigenvals() - cavity.eigenvals()[0])*2*np.pi
         Vc = cavity.creation_operator() + cavity.annihilation_operator()
         cavity = [Hc,Vc]
-        H,H_control,noise = composite_sys(squid,cavity,noise)
+        H,H_control,noise, s = composite_sys(squid,cavity,noise, s)
         evals,U = np.linalg.eigh(H)
         evals,U = sort_eigenpairs(evals,U)
         evals = evals - evals[0]
@@ -172,6 +172,11 @@ class Hamiltonian:
         self.H = self.truncate_matrix(self.H, self.trunc)
         self.H_control = self.Ud1@self.H_control@self.U1
         self.H_control = self.truncate_matrix(self.H_control, self.trunc)
+
+        self.s = self.Ud1@self.s@self.U1
+        self.s = self.truncate_matrix(self.s, self.trunc)
+        self.s = np.triu(self.s)
+        
     
     def get_projectors(self):
         trunc = self.trunc
@@ -206,8 +211,8 @@ class Hamiltonian:
             return calculate_dr_wrapper(A, omega_d)
 
         # Try different bracketing values until we find ones that work
-        omega_min = 5.8 * 2 * np.pi
-        omega_max = 6.4 * 2 * np.pi
+        omega_min = 6.16 * 2 * np.pi
+        omega_max = 6.3 * 2 * np.pi
         n_points = 10
         omega_range = np.linspace(omega_min, omega_max, n_points)
         

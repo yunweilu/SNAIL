@@ -65,10 +65,10 @@ def SNAIL(phi_ex,beta,N,Ej,Ec):
     Hs = Ud@Hs@U
     Hs = Hs - Hs[0,0]*np.identity(sdim)
     noise = -2*Ej*sci.linalg.cosm(phi_zpf*(s+sd))
-    return Hs,Ud@charge_op@U, phi_zpf, Ud@noise@U
+    return Hs,Ud@charge_op@U, phi_zpf, Ud@noise@U, Ud@(s+sd)@U
 
 
-def composite_sys(squid,cavity, noise  ):
+def composite_sys(squid,cavity, noise, s  ):
     Hs, charge_op = squid
     Hc, Vc = cavity
     sdim = Hs.shape[0]
@@ -82,7 +82,8 @@ def composite_sys(squid,cavity, noise  ):
     H = Hs + Hc + H_int
     H_control = np.kron(charge_op, Ic)
     noise = np.kron(noise, Ic)
-    return H, H_control, noise
+    s = np.kron(s, Ic)
+    return H, H_control, noise, s
 
 def state_index(index,dim):
     n,k = index
