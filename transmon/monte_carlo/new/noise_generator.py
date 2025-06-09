@@ -73,7 +73,7 @@ class GenerateNoise:
         import joblib
         
         # Compute frequencies for FFT
-        freqs = np.fft.rfftfreq(self.N, d=self.dt)*2*np.pi
+        freqs = np.fft.rfftfreq(self.N, d=self.dt)
         
         # Define a function to compute PSD for a single trajectory
         def compute_psd(trajectory):
@@ -93,7 +93,7 @@ class GenerateNoise:
         plt.figure(figsize=(7,5))
         plt.loglog(freqs, avg_psd, 'b', label='Measured PSD')
         plt.xlabel('Frequency/2pi [GHz]')
-        plt.ylabel('PSD [units^1/Hz]')
+        plt.ylabel('PSD [Φ₀² · ns]')
         plt.title(f'Average PSD of {self.noise_type}')
         plt.grid(True, linestyle='--', alpha=0.5)
         
@@ -126,8 +126,8 @@ class GenerateNoise:
             plt.loglog(freqs[mask], fit_psd, 'r--', label=f'Fit: 1/f^{-slope:.2f}')
             plt.legend()
             
-            S0 = np.sqrt(noise_amplitude/(2*np.pi))
-            print(f"PSD fit: power = {slope:.4f}, intercept = {intercept:.4f}, R² = {r_value**2:.4f}, S0 = {S0:.6e}")
+            S0 = np.sqrt(noise_amplitude)
+            print(f"PSD fit: power = {slope:.4f}, intercept = {intercept:.4f}, R² = {r_value**2:.4f}, S0 = {S0:.6e} Φ₀")
         
             
         # Add S0 to the plot title for clarity
