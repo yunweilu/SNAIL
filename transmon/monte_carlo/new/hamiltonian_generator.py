@@ -212,7 +212,7 @@ class Hamiltonian:
 
         # Try different bracketing values until we find ones that work
         omega_min = 6.16 * 2 * np.pi
-        omega_max = 6.3 * 2 * np.pi
+        omega_max = 6.2 * 2 * np.pi
         n_points = 10
         omega_range = np.linspace(omega_min, omega_max, n_points)
         
@@ -308,7 +308,18 @@ class Hamiltonian:
 
         # Set up the Floquet solver
         floquet_basis = qt.FloquetBasis(H, T, args={'w': optimal_omega})
-        
+        # Compute Floquet modes and energies
+        f_modes = floquet_basis.mode(0)
+        f_energies = floquet_basis.e_quasi
+        f_modes = np.array(f_modes)
+        # Convert list of Qobj to numpy array
+        f_modes_array = []
+        for mode in f_modes:
+            f_modes_array.append(mode.full().flatten())
+        f_modes = np.array(f_modes_array)
+        f_modes = f_modes.T
+        evals, U = sort_eigenpairs(f_energies,f_modes)
+        self.fit_omega = evals[1] - evals[0]
         def state_and_sigmax(t):
             # Compute Floquet modes and energies
             f_modes = floquet_basis.mode(t)

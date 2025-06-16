@@ -32,7 +32,7 @@ class GenerateNoise:
         self.num_realizations = num_realizations
         self.ifwhite = ifwhite
         self.fmin = fmin
-        self.N = self.t_max * self.sample_rate
+        self.N = int(self.t_max * self.sample_rate)
         self.noise_type = "White Noise" if self.ifwhite else "1/f Noise"
         
     def generate_colored_noise(self):
@@ -46,7 +46,10 @@ class GenerateNoise:
         
         # Define a function to generate a single noise realization
         def generate_single_noise():
-            return cn.powerlaw_psd_gaussian(alpha, self.N, fmin=self.fmin) * np.sqrt(self.relative_PSD_strength * self.sample_rate)
+            if self.ifwhite:
+                return cn.powerlaw_psd_gaussian(alpha, self.N, fmin=self.fmin) * np.sqrt(self.relative_PSD_strength )* np.sqrt(1/self.dt)
+            else:
+                return cn.powerlaw_psd_gaussian(alpha, self.N, fmin=self.fmin) * np.sqrt(self.relative_PSD_strength )* np.sqrt(2*np.log(self.N*np.exp(1)/2))
         
         # Use joblib to parallelize the generation
         trajectories = joblib.Parallel(n_jobs=-1)(
@@ -88,26 +91,22 @@ class GenerateNoise:
         
         # Average PSD
         avg_psd = psds.mean(axis=0)
-        
+        import scipy.integrate
+
+        power_from_psd = scipy.integrate.trapezoid(avg_psd, freqs)
+        variance = np.var(trajectories)
+        #factor of 2 because of the symmetry of the PSD
+        print(f"Numerically evaluatd power: {2*power_from_psd}")
+        print(f"Numerically evaluated variance: {variance}")
         # Plot average PSD
-        plt.figure(figsize=(7,5))
+        plt.figure(figsize=(3.5,2.5))
         plt.loglog(freqs, avg_psd, 'b', label='Measured PSD')
         plt.xlabel('Frequency/2pi [GHz]')
         plt.ylabel('PSD [Φ₀² · ns]')
         plt.title(f'Average PSD of {self.noise_type}')
         plt.grid(True, linestyle='--', alpha=0.5)
-        
-        # Sanity checks
-        # 1) Median raw periodogram / (S0 * t_max)
-        median_ratio = np.median(avg_psd) / (self.relative_PSD_strength )
-        # 2) Std dev of integrated phase / sqrt(S0 * t_max)
-        phi = np.cumsum(trajectories * self.dt, axis=1)
-        std_ratio = np.std(phi[:, -1]) / np.sqrt(self.relative_PSD_strength * self.t_max)
-
-        print(f'Sanity Checks ({self.noise_type.lower()}):')
         if self.noise_type.lower() == 'white noise':
-            print(f"Median raw periodogram / (S0 ): {median_ratio:.6f}")
-            print(f"Std dev of integrated phase / sqrt(S0 * t_max): {std_ratio:.6f}")
+            print(f"Analytically evaluated power: {self.relative_PSD_strength * (freqs[-1] - freqs[0])*2}")
         else:
             # Fit the PSD in log10 scale to get the slope (should be close to -1 for 1/f noise)
             # Skip the first few points to avoid DC component
@@ -127,7 +126,8 @@ class GenerateNoise:
             plt.legend()
             
             S0 = np.sqrt(noise_amplitude)
-            print(f"PSD fit: power = {slope:.4f}, intercept = {intercept:.4f}, R² = {r_value**2:.4f}, S0 = {S0:.6e} Φ₀")
+            print(f"Analytically evaluated power: {2*self.relative_PSD_strength * (np.log(self.N*np.exp(1)/2))}")
+            print(f"PSD fit: power law v.s frequency = {slope:.4f}, fitted intercept = {intercept:.4f}, fitted S0 = {S0:.6e} Φ₀")
         
             
         # Add S0 to the plot title for clarity
@@ -139,8 +139,10 @@ class GenerateNoise:
             return self.relative_PSD_strength
         else:
             return S0
-            
-        
+        # mismatch between numerically and analytically evaluated power comes from these two lines in colorednoise.py.
+        # Transform to real time series & scale to unit variance
+        #y = irfft(s, n=samples, axis=-1) / sigma  
+        #if we run example in  github https://github.com/felixpatzelt/colorednoise, we find var is not 1. so this internal thing requires more investigation.
     
     def run_analysis(self):
         """
