@@ -59,7 +59,7 @@ class GenerateNoise:
         
         return np.array(trajectories)
         
-    def analyze_noise_psd(self, trajectories):
+    def analyze_noise_psd(self, trajectories, ifplot=True):
         """
         Analyze noise trajectories: compute PSD, plot it, and perform sanity checks.
         
@@ -95,18 +95,22 @@ class GenerateNoise:
 
         power_from_psd = scipy.integrate.trapezoid(avg_psd, freqs)
         variance = np.var(trajectories)
-        #factor of 2 because of the symmetry of the PSD
-        print(f"Numerically evaluatd power: {2*power_from_psd}")
-        print(f"Numerically evaluated variance: {variance}")
-        # Plot average PSD
-        plt.figure(figsize=(3.5,2.5))
-        plt.loglog(freqs, avg_psd, 'b', label='Measured PSD')
-        plt.xlabel('Frequency/2pi [GHz]')
-        plt.ylabel('PSD [Φ₀² · ns]')
-        plt.title(f'Average PSD of {self.noise_type}')
-        plt.grid(True, linestyle='--', alpha=0.5)
+        
+        if ifplot:
+            #factor of 2 because of the symmetry of the PSD
+            print(f"Numerically evaluatd power: {2*power_from_psd}")
+            print(f"Numerically evaluated variance: {variance}")
+            # Plot average PSD
+            plt.figure(figsize=(3.5,2.5))
+            plt.loglog(freqs, avg_psd, 'b', label='Measured PSD')
+            plt.xlabel('Frequency/2pi [GHz]')
+            plt.ylabel('PSD [Φ₀² · ns]')
+            plt.title(f'Average PSD of {self.noise_type}')
+            plt.grid(True, linestyle='--', alpha=0.5)
+        
         if self.noise_type.lower() == 'white noise':
-            print(f"Analytically evaluated power: {self.relative_PSD_strength * (freqs[-1] - freqs[0])*2}")
+            if ifplot:
+                print(f"Analytically evaluated power: {self.relative_PSD_strength * (freqs[-1] - freqs[0])*2}")
         else:
             # Fit the PSD in log10 scale to get the slope (should be close to -1 for 1/f noise)
             # Skip the first few points to avoid DC component
@@ -120,20 +124,34 @@ class GenerateNoise:
             # Calculate noise amplitude (10^slope)
             noise_amplitude = 10**intercept
             
-            # Plot the fitting curve for 1/f noise
-            fit_psd = 10**(slope * np.log10(freqs[mask]) + intercept)
-            plt.loglog(freqs[mask], fit_psd, 'r--', label=f'Fit: 1/f^{-slope:.2f}')
-            plt.legend()
+            if ifplot:
+                # Plot the fitting curve for 1/f noise
+                fit_psd = 10**(slope * np.log10(freqs[mask]) + intercept)
+                plt.loglog(freqs[mask], fit_psd, 'r--', label=f'Fit: 1/f^{-slope:.2f}')
+                plt.legend()
             
             S0 = np.sqrt(noise_amplitude)
-            print(f"Analytically evaluated power: {2*self.relative_PSD_strength * (np.log(self.N*np.exp(1)/2))}")
-            print(f"PSD fit: power law v.s frequency = {slope:.4f}, fitted intercept = {intercept:.4f}, fitted S0 = {S0:.6e} Φ₀")
+            if ifplot:
+                print(f"Analytically evaluated power: {2*self.relative_PSD_strength * (np.log(self.N*np.exp(1)/2))}")
+                print(f"PSD fit: power law v.s frequency = {slope:.4f}, fitted intercept = {intercept:.4f}, fitted S0 = {S0:.6e} Φ₀")
         
-            
-        # Add S0 to the plot title for clarity
-        plt.title(f'Average PSD of {self.noise_type} ')
-        plt.tight_layout()
-        plt.show()
+        if ifplot:    
+            # Add S0 to the plot title for clarity
+            plt.title(f'Average PSD of {self.noise_type} ')
+            plt.tight_layout()
+            plt.show()
+
+            # Sum all trajectories and take average
+            avg_traj = np.mean(trajectories, axis=0)
+            plt.figure(figsize=(3.5, 2.5))
+            plt.plot(avg_traj, label='Average trajectory')
+            plt.xlabel('Time (ns)')
+            plt.ylabel('Φ_ex (Φ_0)')
+            plt.title('Average Noise Trajectory')
+            plt.legend()
+            plt.grid(True)
+            plt.show()
+
         # Return S0 value for 1/f noise
         if self.noise_type.lower() == 'white noise':
             return self.relative_PSD_strength
