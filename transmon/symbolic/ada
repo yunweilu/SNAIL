@@ -1,1 +1,0 @@
-(A**3/(2*(K_a + delta)**2*(K_a + 2*delta)) + A*(-A**2/(4*(-K_a - delta)**2) - A**2/(8*delta**2) + 1)/(2*delta))**2
