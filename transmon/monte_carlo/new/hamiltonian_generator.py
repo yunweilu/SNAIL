@@ -213,7 +213,7 @@ class Hamiltonian:
         # Try different bracketing values until we find ones that work
         omega_min = 6.16 * 2 * np.pi
         omega_max = 6.2 * 2 * np.pi
-        n_points = 10
+        n_points = 20
         omega_range = np.linspace(omega_min, omega_max, n_points)
         
         # Find minimum point among test points
