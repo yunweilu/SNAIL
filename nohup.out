@@ -1,0 +1,268 @@
+[I 2025-08-25 18:09:17.344 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-25 18:09:17.348 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-08-25 18:09:17.352 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-08-25 18:09:17.353 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2025-08-25 18:09:17.356 ServerApp] notebook | extension was successfully linked.
+[I 2025-08-25 18:09:17.357 ServerApp] Writing Jupyter server cookie secret to /home/yunwei/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2025-08-25 18:09:17.588 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-08-25 18:09:17.611 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-25 18:09:17.612 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-25 18:09:17.613 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-25 18:09:17.616 LabApp] JupyterLab extension loaded from /home/yunwei/.local/lib/python3.8/site-packages/jupyterlab
+[I 2025-08-25 18:09:17.616 LabApp] JupyterLab application directory is /home/yunwei/.local/share/jupyter/lab
+[I 2025-08-25 18:09:17.617 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-25 18:09:17.627 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-25 18:09:17.630 ServerApp] notebook | extension was successfully loaded.
+[W 2025-08-25 18:09:17.630 ServerApp] Permission to listen on port 1000 denied.
+[W 2025-08-25 18:09:17.630 ServerApp] Permission to listen on port 1001 denied.
+[W 2025-08-25 18:09:17.631 ServerApp] Permission to listen on port 1002 denied.
+[W 2025-08-25 18:09:17.631 ServerApp] Permission to listen on port 1003 denied.
+[W 2025-08-25 18:09:17.631 ServerApp] Permission to listen on port 1004 denied.
+[W 2025-08-25 18:09:17.631 ServerApp] Permission to listen on port 958 denied.
+[W 2025-08-25 18:09:17.631 ServerApp] Permission to listen on port 957 denied.
+[W 2025-08-25 18:09:17.631 ServerApp] Permission to listen on port 952 denied.
+[W 2025-08-25 18:09:17.631 ServerApp] Permission to listen on port 910 denied.
+[I 2025-08-25 18:09:17.631 ServerApp] Serving notebooks from local directory: /home/yunwei/SNAIL
+[I 2025-08-25 18:09:17.631 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2025-08-25 18:09:17.631 ServerApp] http://mononoke:1042/tree?token=...
+[I 2025-08-25 18:09:17.631 ServerApp]     http://127.0.0.1:1042/tree?token=...
+[I 2025-08-25 18:09:17.631 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-25 18:09:17.656 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-25 18:15:24.246 ServerApp] 302 GET / (@127.0.0.1) 0.72ms
+[I 2025-08-25 18:15:24.252 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.64ms
+[I 2025-08-25 18:15:30.916 ServerApp] 302 GET / (@127.0.0.1) 0.39ms
+[I 2025-08-25 18:15:30.936 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.53ms
+[I 2025-08-25 18:15:39.210 ServerApp] 302 GET / (@127.0.0.1) 0.54ms
+[I 2025-08-25 18:15:39.212 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.34ms
+[I 2025-08-25 18:15:39.274 ServerApp] Kernel started: f1b21636-e71e-468d-bfb5-81bff991e853
+[I 2025-08-25 18:15:40.064 ServerApp] Connecting to kernel f1b21636-e71e-468d-bfb5-81bff991e853.
+[W 2025-08-25 18:15:42.222 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 5.54ms referer=None
+[W 2025-08-25 18:15:42.223 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 0.63ms referer=None
+[W 2025-08-25 18:15:42.224 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 0.74ms referer=None
+[W 2025-08-25 18:15:42.224 ServerApp] 404 GET /nbextensions/jupyterlab-plotly/extension.js (@127.0.0.1) 1.11ms referer=None
+[I 2025-08-25 18:15:42.225 ServerApp] 302 GET / (@127.0.0.1) 0.26ms
+[I 2025-08-25 18:15:42.228 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.30ms
+[W 2025-08-25 18:15:42.241 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 1.19ms referer=None
+[W 2025-08-25 18:15:42.247 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 0.96ms referer=None
+[W 2025-08-25 18:15:42.253 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 0.96ms referer=None
+[W 2025-08-25 18:15:42.254 ServerApp] 404 GET /nbextensions/jupyterlab-plotly/extension.js (@127.0.0.1) 0.61ms referer=None
+[I 2025-08-25 18:16:26.476 ServerApp] Starting buffering for f1b21636-e71e-468d-bfb5-81bff991e853:d1175ad5-6465-4460-86dd-a4d017c17749
+[I 2025-08-25 18:16:37.913 ServerApp] 302 GET / (@127.0.0.1) 0.49ms
+[I 2025-08-25 18:16:37.920 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.38ms
+[I 2025-08-25 18:16:48.250 ServerApp] 302 GET / (@127.0.0.1) 0.48ms
+[I 2025-08-25 18:16:48.253 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.49ms
+[I 2025-08-25 18:16:48.272 ServerApp] Connecting to kernel f1b21636-e71e-468d-bfb5-81bff991e853.
+[I 2025-08-25 18:16:52.007 ServerApp] Starting buffering for f1b21636-e71e-468d-bfb5-81bff991e853:0ad5b545-4aa5-4e2e-9cab-4b6e681b7ac6
+[I 2025-08-25 18:16:57.856 ServerApp] 302 GET / (@127.0.0.1) 0.36ms
+[I 2025-08-25 18:16:57.861 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.39ms
+[I 2025-08-25 18:18:12.985 ServerApp] 302 GET / (@127.0.0.1) 0.35ms
+[I 2025-08-25 18:18:12.992 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.36ms
+[I 2025-08-25 18:21:56.582 ServerApp] 302 GET / (@127.0.0.1) 0.48ms
+[I 2025-08-25 18:21:56.585 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.36ms
+[I 2025-08-25 18:23:25.218 ServerApp] 302 GET / (@127.0.0.1) 0.48ms
+[I 2025-08-25 18:23:25.220 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.38ms
+[I 2025-08-25 18:23:55.474 ServerApp] 302 GET / (@127.0.0.1) 0.49ms
+[I 2025-08-25 18:23:55.478 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.59ms
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[I 2025-08-25 18:29:47.466 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-25 18:29:47.470 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-08-25 18:29:47.474 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-08-25 18:29:47.475 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2025-08-25 18:29:47.478 ServerApp] notebook | extension was successfully linked.
+[I 2025-08-25 18:29:47.651 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-08-25 18:29:47.670 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-25 18:29:47.672 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-25 18:29:47.673 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-25 18:29:47.674 LabApp] JupyterLab extension loaded from /home/yunwei/.local/lib/python3.8/site-packages/jupyterlab
+[I 2025-08-25 18:29:47.674 LabApp] JupyterLab application directory is /home/yunwei/.local/share/jupyter/lab
+[I 2025-08-25 18:29:47.674 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-25 18:29:47.685 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-25 18:29:47.687 ServerApp] notebook | extension was successfully loaded.
+[W 2025-08-25 18:29:47.688 ServerApp] Permission to listen on port 1000 denied.
+[W 2025-08-25 18:29:47.688 ServerApp] Permission to listen on port 1001 denied.
+[W 2025-08-25 18:29:47.688 ServerApp] Permission to listen on port 1002 denied.
+[W 2025-08-25 18:29:47.688 ServerApp] Permission to listen on port 1003 denied.
+[W 2025-08-25 18:29:47.688 ServerApp] Permission to listen on port 1004 denied.
+[W 2025-08-25 18:29:47.688 ServerApp] Permission to listen on port 928 denied.
+[I 2025-08-25 18:29:47.688 ServerApp] Serving notebooks from local directory: /home/yunwei/SNAIL
+[I 2025-08-25 18:29:47.688 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2025-08-25 18:29:47.688 ServerApp] http://mononoke:1059/tree?token=...
+[I 2025-08-25 18:29:47.688 ServerApp]     http://127.0.0.1:1059/tree?token=...
+[I 2025-08-25 18:29:47.688 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-25 18:29:47.725 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-25 18:30:43.636 ServerApp] 302 GET / (@127.0.0.1) 0.53ms
+[I 2025-08-25 18:30:43.639 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.44ms
+[I 2025-08-25 18:30:45.127 ServerApp] 302 GET / (@127.0.0.1) 0.26ms
+[I 2025-08-25 18:30:45.130 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.29ms
+[I 2025-08-25 18:32:57.616 ServerApp] 302 GET / (@127.0.0.1) 2.60ms
+[I 2025-08-25 18:32:57.618 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 1.42ms
+[I 2025-08-25 18:38:42.431 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-25 18:38:42.434 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-08-25 18:38:42.438 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-08-25 18:38:42.440 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2025-08-25 18:38:42.443 ServerApp] notebook | extension was successfully linked.
+[I 2025-08-25 18:38:42.616 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-08-25 18:38:42.635 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-25 18:38:42.637 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-25 18:38:42.638 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-25 18:38:42.639 LabApp] JupyterLab extension loaded from /home/yunwei/.local/lib/python3.8/site-packages/jupyterlab
+[I 2025-08-25 18:38:42.639 LabApp] JupyterLab application directory is /home/yunwei/.local/share/jupyter/lab
+[I 2025-08-25 18:38:42.639 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-25 18:38:42.649 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-25 18:38:42.652 ServerApp] notebook | extension was successfully loaded.
+[W 2025-08-25 18:38:42.652 ServerApp] Permission to listen on port 1000 denied.
+[W 2025-08-25 18:38:42.653 ServerApp] Permission to listen on port 1001 denied.
+[W 2025-08-25 18:38:42.653 ServerApp] Permission to listen on port 1002 denied.
+[W 2025-08-25 18:38:42.653 ServerApp] Permission to listen on port 1003 denied.
+[W 2025-08-25 18:38:42.653 ServerApp] Permission to listen on port 1004 denied.
+[W 2025-08-25 18:38:42.653 ServerApp] Permission to listen on port 986 denied.
+[W 2025-08-25 18:38:42.653 ServerApp] Permission to listen on port 994 denied.
+[W 2025-08-25 18:38:42.653 ServerApp] Permission to listen on port 972 denied.
+[W 2025-08-25 18:38:42.653 ServerApp] Permission to listen on port 963 denied.
+[W 2025-08-25 18:38:42.653 ServerApp] Permission to listen on port 969 denied.
+[I 2025-08-25 18:38:42.653 ServerApp] Serving notebooks from local directory: /home/yunwei/SNAIL
+[I 2025-08-25 18:38:42.653 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2025-08-25 18:38:42.653 ServerApp] http://mononoke:1035/tree?token=...
+[I 2025-08-25 18:38:42.653 ServerApp]     http://127.0.0.1:1035/tree?token=...
+[I 2025-08-25 18:38:42.653 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-25 18:38:42.692 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-25 18:39:08.040 ServerApp] 302 GET / (@127.0.0.1) 0.55ms
+[I 2025-08-25 18:39:08.042 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.60ms
+[I 2025-08-25 18:39:09.759 ServerApp] 302 GET / (@127.0.0.1) 0.48ms
+[I 2025-08-25 18:39:09.762 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.51ms
+nice: ‘/home/yunwei/.conda/envs/yunwei_local/bin/jupyter-notebook’: No such file or directory
+[I 2025-08-25 18:43:23.103 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-25 18:43:23.106 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-08-25 18:43:23.110 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-08-25 18:43:23.111 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2025-08-25 18:43:23.114 ServerApp] notebook | extension was successfully linked.
+[I 2025-08-25 18:43:23.286 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-08-25 18:43:23.305 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-25 18:43:23.307 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-25 18:43:23.307 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-25 18:43:23.308 LabApp] JupyterLab extension loaded from /home/yunwei/.local/lib/python3.8/site-packages/jupyterlab
+[I 2025-08-25 18:43:23.308 LabApp] JupyterLab application directory is /home/yunwei/.local/share/jupyter/lab
+[I 2025-08-25 18:43:23.309 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-25 18:43:23.319 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-25 18:43:23.322 ServerApp] notebook | extension was successfully loaded.
+[W 2025-08-25 18:43:23.322 ServerApp] Permission to listen on port 1000 denied.
+[W 2025-08-25 18:43:23.322 ServerApp] Permission to listen on port 1001 denied.
+[W 2025-08-25 18:43:23.322 ServerApp] Permission to listen on port 1002 denied.
+[W 2025-08-25 18:43:23.322 ServerApp] Permission to listen on port 1003 denied.
+[W 2025-08-25 18:43:23.322 ServerApp] Permission to listen on port 1004 denied.
+[W 2025-08-25 18:43:23.322 ServerApp] Permission to listen on port 980 denied.
+[I 2025-08-25 18:43:23.322 ServerApp] Serving notebooks from local directory: /home/yunwei/SNAIL
+[I 2025-08-25 18:43:23.322 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2025-08-25 18:43:23.322 ServerApp] http://mononoke:1056/tree?token=...
+[I 2025-08-25 18:43:23.322 ServerApp]     http://127.0.0.1:1056/tree?token=...
+[I 2025-08-25 18:43:23.323 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-25 18:43:23.359 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-25 18:43:30.336 ServerApp] 302 GET / (@127.0.0.1) 0.55ms
+[I 2025-08-25 18:43:30.356 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.47ms
+[I 2025-08-25 18:43:31.675 ServerApp] 302 GET / (@127.0.0.1) 0.26ms
+[I 2025-08-25 18:43:31.680 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.32ms
+[I 2025-08-26 11:12:27.223 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-26 11:12:27.227 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-08-26 11:12:27.231 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-08-26 11:12:27.232 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2025-08-26 11:12:27.235 ServerApp] notebook | extension was successfully linked.
+[I 2025-08-26 11:12:27.409 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-08-26 11:12:27.428 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-26 11:12:27.430 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-26 11:12:27.431 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-26 11:12:27.432 LabApp] JupyterLab extension loaded from /home/yunwei/.local/lib/python3.8/site-packages/jupyterlab
+[I 2025-08-26 11:12:27.432 LabApp] JupyterLab application directory is /home/yunwei/.local/share/jupyter/lab
+[I 2025-08-26 11:12:27.433 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-26 11:12:27.443 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-26 11:12:27.446 ServerApp] notebook | extension was successfully loaded.
+[W 2025-08-26 11:12:27.446 ServerApp] Permission to listen on port 1000 denied.
+[W 2025-08-26 11:12:27.446 ServerApp] Permission to listen on port 1001 denied.
+[W 2025-08-26 11:12:27.446 ServerApp] Permission to listen on port 1002 denied.
+[W 2025-08-26 11:12:27.446 ServerApp] Permission to listen on port 1003 denied.
+[W 2025-08-26 11:12:27.446 ServerApp] Permission to listen on port 1004 denied.
+[W 2025-08-26 11:12:27.446 ServerApp] Permission to listen on port 939 denied.
+[I 2025-08-26 11:12:27.447 ServerApp] Serving notebooks from local directory: /home/yunwei/SNAIL
+[I 2025-08-26 11:12:27.447 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2025-08-26 11:12:27.447 ServerApp] http://mononoke:1084/tree?token=...
+[I 2025-08-26 11:12:27.447 ServerApp]     http://127.0.0.1:1084/tree?token=...
+[I 2025-08-26 11:12:27.447 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-26 11:12:27.475 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-26 11:12:59.096 ServerApp] 302 GET / (@127.0.0.1) 0.54ms
+[I 2025-08-26 11:12:59.108 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.45ms
+[I 2025-08-26 11:13:00.372 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2025-08-26 11:13:00.380 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.41ms
+nice: ‘/opt/anaconda3/envs/yunwei2/bin/jupyter-notebook’: No such file or directory
+nice: ‘/opt/anaconda3/envs/yunwei2/bin/jupyter-notebook’: No such file or directory
+nice: ‘/opt/anaconda3/envs/yunwei2/bin/jupyter-notebook’: No such file or directory
+[W 2025-08-26 11:23:01.701 ServerApp] notebook | error adding extension (enabled: True): The module 'notebook' could not be found (No module named 'notebook'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/opt/anaconda3/envs/yunwei2/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 358, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/anaconda3/envs/yunwei2/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 212, in __init__
+        self._load_metadata()
+      File "/opt/anaconda3/envs/yunwei2/lib/python3.11/site-packages/jupyter_server/extension/manager.py", line 227, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'notebook' could not be found (No module named 'notebook'). Are you sure the extension is installed?
+[I 2025-08-26 11:23:01.702 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-26 11:23:01.705 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-08-26 11:23:01.709 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-08-26 11:23:01.864 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-08-26 11:23:01.875 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-26 11:23:01.877 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-26 11:23:01.877 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-26 11:23:01.910 LabApp] JupyterLab extension loaded from /opt/anaconda3/envs/yunwei2/lib/python3.11/site-packages/jupyterlab
+[I 2025-08-26 11:23:01.910 LabApp] JupyterLab application directory is /opt/anaconda3/envs/yunwei2/share/jupyter/lab
+[I 2025-08-26 11:23:01.911 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-26 11:23:01.935 ServerApp] jupyterlab | extension was successfully loaded.
+[W 2025-08-26 11:23:01.935 ServerApp] Permission to listen on port 1000 denied.
+[W 2025-08-26 11:23:01.935 ServerApp] Permission to listen on port 1001 denied.
+[W 2025-08-26 11:23:01.936 ServerApp] Permission to listen on port 1002 denied.
+[W 2025-08-26 11:23:01.936 ServerApp] Permission to listen on port 1003 denied.
+[W 2025-08-26 11:23:01.936 ServerApp] Permission to listen on port 1004 denied.
+[W 2025-08-26 11:23:01.936 ServerApp] Permission to listen on port 998 denied.
+[I 2025-08-26 11:23:01.936 ServerApp] Serving notebooks from local directory: /home/yunwei/SNAIL
+[I 2025-08-26 11:23:01.936 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-08-26 11:23:01.936 ServerApp] http://mononoke:1044/lab?token=...
+[I 2025-08-26 11:23:01.936 ServerApp]     http://127.0.0.1:1044/lab?token=...
+[I 2025-08-26 11:23:01.936 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-26 11:23:01.960 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-08-26 11:23:28.501 ServerApp] 404 GET /hub/api (@127.0.0.1) 18.01ms referer=None
+[I 2025-08-26 11:23:28.502 ServerApp] 302 GET / (@127.0.0.1) 1.24ms
+[I 2025-08-26 11:23:28.504 LabApp] 302 GET /lab? (@127.0.0.1) 1.82ms
+[I 2025-08-26 11:23:33.040 ServerApp] 302 GET / (@127.0.0.1) 0.41ms
+[I 2025-08-26 11:23:33.042 LabApp] 302 GET /lab? (@127.0.0.1) 0.37ms
+[I 2025-08-26 11:23:36.176 ServerApp] 302 GET / (@127.0.0.1) 0.37ms
+[I 2025-08-26 11:23:36.178 LabApp] 302 GET /lab? (@127.0.0.1) 0.44ms
+[I 2025-08-26 11:24:16.364 ServerApp] 302 GET / (@127.0.0.1) 0.33ms
+[I 2025-08-26 11:24:16.368 LabApp] 302 GET /lab? (@127.0.0.1) 0.44ms
+[I 2025-08-26 11:24:16.424 ServerApp] Kernel started: d368ae3f-efff-44c2-ab9d-6c5cd87f794b
+[I 2025-08-26 11:24:16.924 ServerApp] Connecting to kernel d368ae3f-efff-44c2-ab9d-6c5cd87f794b.
+[W 2025-08-26 11:24:16.925 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[W 2025-08-26 11:24:18.365 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 1.45ms referer=None
+[W 2025-08-26 11:24:18.366 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 1.69ms referer=None
+[W 2025-08-26 11:24:18.366 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 2.01ms referer=None
+[I 2025-08-26 11:24:18.367 ServerApp] 302 GET / (@127.0.0.1) 0.18ms
+[I 2025-08-26 11:24:18.371 LabApp] 302 GET /lab? (@127.0.0.1) 1.04ms
+[W 2025-08-26 11:24:18.388 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 0.82ms referer=None
+[W 2025-08-26 11:24:18.388 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 1.09ms referer=None
+[W 2025-08-26 11:24:18.389 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 1.36ms referer=None
+[I 2025-08-26 11:28:17.247 ServerApp] Kernel restarted: d368ae3f-efff-44c2-ab9d-6c5cd87f794b
+[I 2025-08-26 11:28:17.253 ServerApp] Starting buffering for d368ae3f-efff-44c2-ab9d-6c5cd87f794b:9cdc56d1-9d48-45ca-bac9-ec948b95506a
+[I 2025-08-26 11:28:17.267 ServerApp] Connecting to kernel d368ae3f-efff-44c2-ab9d-6c5cd87f794b.
+[I 2025-08-26 11:28:17.267 ServerApp] Restoring connection for d368ae3f-efff-44c2-ab9d-6c5cd87f794b:9cdc56d1-9d48-45ca-bac9-ec948b95506a
+[I 2025-08-26 11:28:22.515 ServerApp] Kernel restarted: d368ae3f-efff-44c2-ab9d-6c5cd87f794b
+[I 2025-08-26 11:28:22.519 ServerApp] Starting buffering for d368ae3f-efff-44c2-ab9d-6c5cd87f794b:9cdc56d1-9d48-45ca-bac9-ec948b95506a
+[I 2025-08-26 11:28:22.522 ServerApp] Connecting to kernel d368ae3f-efff-44c2-ab9d-6c5cd87f794b.
+[I 2025-08-26 11:28:22.522 ServerApp] Restoring connection for d368ae3f-efff-44c2-ab9d-6c5cd87f794b:9cdc56d1-9d48-45ca-bac9-ec948b95506a
+[I 2025-08-26 11:28:27.701 ServerApp] Starting buffering for d368ae3f-efff-44c2-ab9d-6c5cd87f794b:9cdc56d1-9d48-45ca-bac9-ec948b95506a
+[I 2025-08-26 11:28:35.831 ServerApp] 302 GET / (@127.0.0.1) 0.34ms
+[I 2025-08-26 11:28:35.833 LabApp] 302 GET /lab? (@127.0.0.1) 0.29ms
+[I 2025-08-26 11:28:35.879 ServerApp] Kernel started: a68ea192-9f08-4d1a-b37b-f9475c5eecec
+[I 2025-08-26 11:28:36.271 ServerApp] Connecting to kernel a68ea192-9f08-4d1a-b37b-f9475c5eecec.
+[I 2025-08-26 11:30:52.807 ServerApp] Kernel restarted: a68ea192-9f08-4d1a-b37b-f9475c5eecec
+[I 2025-08-26 11:30:52.811 ServerApp] Starting buffering for a68ea192-9f08-4d1a-b37b-f9475c5eecec:3b1f1ed4-7155-44a2-9ca0-b3baa1aef537
+[I 2025-08-26 11:30:52.813 ServerApp] Connecting to kernel a68ea192-9f08-4d1a-b37b-f9475c5eecec.
+[I 2025-08-26 11:30:52.813 ServerApp] Restoring connection for a68ea192-9f08-4d1a-b37b-f9475c5eecec:3b1f1ed4-7155-44a2-9ca0-b3baa1aef537
+[I 2025-08-26 11:36:41.831 ServerApp] Starting buffering for a68ea192-9f08-4d1a-b37b-f9475c5eecec:3b1f1ed4-7155-44a2-9ca0-b3baa1aef537
