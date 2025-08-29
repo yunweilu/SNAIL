@@ -623,3 +623,337 @@ Call-back cb_f_in_zvode__user__routines failed.
 [I 2025-08-27 15:20:44.404 ServerApp] 302 GET / (@127.0.0.1) 0.46ms
 [I 2025-08-27 15:20:44.427 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.63ms
 [I 2025-08-27 15:20:44.749 ServerApp] Connecting to kernel 573b7945-d455-446c-b881-66344ab994c0.
+Fail to get yarn configuration. internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module 'worker_threads'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at /home/yunwei/miniconda3/envs/fluxonium/lib/python3.11/site-packages/jupyterlab/staging/yarn.js:423:2576
+    at Object.<anonymous> (/home/yunwei/miniconda3/envs/fluxonium/lib/python3.11/site-packages/jupyterlab/staging/yarn.js:743:8770)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+
+[I 2025-08-27 15:49:47.818 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-08-27 15:49:47.821 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-08-27 15:49:47.824 ServerApp] jupyterlab | extension was successfully linked.
+[W 2025-08-27 15:49:47.825 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2025-08-27 15:49:47.827 ServerApp] notebook | extension was successfully linked.
+[I 2025-08-27 15:49:47.966 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-08-27 15:49:47.989 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-08-27 15:49:47.991 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-08-27 15:49:48.025 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-08-27 15:49:48.028 LabApp] JupyterLab extension loaded from /home/yunwei/miniconda3/envs/fluxonium/lib/python3.11/site-packages/jupyterlab
+[I 2025-08-27 15:49:48.028 LabApp] JupyterLab application directory is /home/yunwei/miniconda3/envs/fluxonium/share/jupyter/lab
+[I 2025-08-27 15:49:48.028 LabApp] Extension Manager is 'pypi'.
+[I 2025-08-27 15:49:48.062 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-08-27 15:49:48.065 ServerApp] notebook | extension was successfully loaded.
+[W 2025-08-27 15:49:48.065 ServerApp] Permission to listen on port 1000 denied.
+[W 2025-08-27 15:49:48.065 ServerApp] Permission to listen on port 1001 denied.
+[W 2025-08-27 15:49:48.065 ServerApp] Permission to listen on port 1002 denied.
+[W 2025-08-27 15:49:48.065 ServerApp] Permission to listen on port 1003 denied.
+[W 2025-08-27 15:49:48.065 ServerApp] Permission to listen on port 1004 denied.
+[I 2025-08-27 15:49:48.065 ServerApp] Serving notebooks from local directory: /home/yunwei/SNAIL/transmon/monte_carlo/new/full_simulation
+[I 2025-08-27 15:49:48.065 ServerApp] Jupyter Server 2.16.0 is running at:
+[I 2025-08-27 15:49:48.065 ServerApp] http://haku:1049/tree?token=...
+[I 2025-08-27 15:49:48.065 ServerApp]     http://127.0.0.1:1049/tree?token=...
+[I 2025-08-27 15:49:48.065 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-08-27 15:49:48.096 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-08-27 15:50:20.376 ServerApp] 302 GET / (@127.0.0.1) 0.97ms
+[I 2025-08-27 15:50:20.381 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 1.14ms
+[I 2025-08-27 15:50:21.620 ServerApp] 302 GET / (@127.0.0.1) 0.71ms
+[I 2025-08-27 15:50:21.626 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.84ms
+[I 2025-08-27 15:50:37.199 ServerApp] 302 GET / (@127.0.0.1) 0.77ms
+[I 2025-08-27 15:50:37.204 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.83ms
+[I 2025-08-27 15:50:37.275 ServerApp] Kernel started: d48fd612-a1d3-4091-bff5-dcb8a4bd8f47
+[I 2025-08-27 15:50:37.645 ServerApp] Connecting to kernel d48fd612-a1d3-4091-bff5-dcb8a4bd8f47.
+[W 2025-08-27 15:50:37.647 ServerApp] The websocket_ping_timeout (90000) cannot be longer than the websocket_ping_interval (30000).
+    Setting websocket_ping_timeout=30000
+[I 2025-08-27 16:06:23.680 ServerApp] 302 GET / (@127.0.0.1) 0.44ms
+[I 2025-08-27 16:06:24.521 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.59ms
+[I 2025-08-27 16:06:44.376 ServerApp] 302 GET / (@127.0.0.1) 0.40ms
+[I 2025-08-27 16:06:44.380 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.52ms
+[I 2025-08-27 16:06:44.464 ServerApp] Kernel started: 07e15f53-2cb0-4e16-b49b-019e6822bfa7
+[I 2025-08-27 16:06:45.508 ServerApp] Connecting to kernel 07e15f53-2cb0-4e16-b49b-019e6822bfa7.
+[W 2025-08-27 16:06:46.961 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 6.82ms referer=None
+[W 2025-08-27 16:06:46.971 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 16.08ms referer=None
+[W 2025-08-27 16:06:46.972 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 16.84ms referer=None
+[I 2025-08-27 16:06:46.973 ServerApp] 302 GET / (@127.0.0.1) 17.02ms
+[I 2025-08-27 16:06:46.979 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.46ms
+[W 2025-08-27 16:06:46.986 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 0.86ms referer=None
+[W 2025-08-27 16:06:46.988 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 1.17ms referer=None
+[W 2025-08-27 16:06:46.988 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 1.57ms referer=None
+[I 2025-08-27 16:11:18.611 ServerApp] Starting buffering for d48fd612-a1d3-4091-bff5-dcb8a4bd8f47:68d5e87c-4a7d-4501-8f21-b4657ffd7abc
+[I 2025-08-27 16:11:28.713 ServerApp] Starting buffering for 07e15f53-2cb0-4e16-b49b-019e6822bfa7:71f61939-0103-47b3-9cdf-f188740f2d72
+[I 2025-08-27 16:11:29.950 ServerApp] 302 GET / (@127.0.0.1) 0.42ms
+[I 2025-08-27 16:11:29.959 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.48ms
+[I 2025-08-27 16:11:29.990 ServerApp] Connecting to kernel d48fd612-a1d3-4091-bff5-dcb8a4bd8f47.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2025-08-27 17:25:03.239 ServerApp] Kernel restarted: d48fd612-a1d3-4091-bff5-dcb8a4bd8f47
+[I 2025-08-27 17:25:03.244 ServerApp] Starting buffering for d48fd612-a1d3-4091-bff5-dcb8a4bd8f47:6326af06-d664-4b02-82cb-c45393642ad3
+[I 2025-08-27 17:25:03.255 ServerApp] Connecting to kernel d48fd612-a1d3-4091-bff5-dcb8a4bd8f47.
+[I 2025-08-27 17:25:03.256 ServerApp] Restoring connection for d48fd612-a1d3-4091-bff5-dcb8a4bd8f47:6326af06-d664-4b02-82cb-c45393642ad3
+[I 2025-08-27 17:25:23.464 ServerApp] 302 GET / (@127.0.0.1) 0.64ms
+[I 2025-08-27 17:25:23.468 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.79ms
+[I 2025-08-27 17:25:23.498 ServerApp] Connecting to kernel d48fd612-a1d3-4091-bff5-dcb8a4bd8f47.
+[W 2025-08-27 17:25:25.252 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 1.78ms referer=None
+[W 2025-08-27 17:25:25.254 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 2.23ms referer=None
+[W 2025-08-27 17:25:25.256 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 3.09ms referer=None
+[I 2025-08-27 17:25:25.256 ServerApp] 302 GET / (@127.0.0.1) 3.16ms
+[I 2025-08-27 17:25:25.261 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.67ms
+[W 2025-08-27 17:25:25.268 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 1.33ms referer=None
+[W 2025-08-27 17:25:25.270 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 1.85ms referer=None
+[W 2025-08-27 17:25:25.271 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 2.38ms referer=None
+[I 2025-08-27 17:25:36.173 ServerApp] 302 GET / (@127.0.0.1) 0.74ms
+[I 2025-08-27 17:25:36.178 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.84ms
+[I 2025-08-27 17:35:57.910 ServerApp] Kernel interrupted: d48fd612-a1d3-4091-bff5-dcb8a4bd8f47
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2025-08-27 17:38:38.457 ServerApp] Kernel interrupted: d48fd612-a1d3-4091-bff5-dcb8a4bd8f47
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2025-08-27 20:48:03.534 ServerApp] Starting buffering for d48fd612-a1d3-4091-bff5-dcb8a4bd8f47:6928bea0-0771-4249-831c-59c1287fb167
+[I 2025-08-28 09:43:49.874 ServerApp] 302 GET / (@127.0.0.1) 0.43ms
+[I 2025-08-28 09:43:50.044 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.57ms
+[I 2025-08-28 09:44:08.854 ServerApp] 302 GET / (@127.0.0.1) 0.45ms
+[I 2025-08-28 09:44:08.856 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.47ms
+[I 2025-08-28 09:44:08.892 ServerApp] Connecting to kernel 07e15f53-2cb0-4e16-b49b-019e6822bfa7.
+[W 2025-08-28 09:44:10.499 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 2.13ms referer=None
+[W 2025-08-28 09:44:10.500 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 2.55ms referer=None
+[W 2025-08-28 09:44:10.501 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 2.96ms referer=None
+[I 2025-08-28 09:44:10.501 ServerApp] 302 GET / (@127.0.0.1) 2.89ms
+[I 2025-08-28 09:44:10.514 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.57ms
+[W 2025-08-28 09:44:10.534 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 1.04ms referer=None
+[W 2025-08-28 09:44:10.538 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 0.89ms referer=None
+[W 2025-08-28 09:44:10.539 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 0.84ms referer=None
+[I 2025-08-28 09:58:46.716 ServerApp] 302 GET / (@127.0.0.1) 0.42ms
+[I 2025-08-28 09:58:47.660 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.56ms
+[I 2025-08-28 10:03:41.969 ServerApp] Starting buffering for 07e15f53-2cb0-4e16-b49b-019e6822bfa7:7938830e-c1ba-4b63-b5a1-40bd11546461
+[I 2025-08-28 10:26:33.137 ServerApp] 302 GET / (@127.0.0.1) 0.75ms
+[I 2025-08-28 10:26:33.143 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.95ms
+[I 2025-08-28 10:26:33.191 ServerApp] Connecting to kernel d48fd612-a1d3-4091-bff5-dcb8a4bd8f47.
+[I 2025-08-28 10:26:33.191 ServerApp] Discarding 32 buffered messages for d48fd612-a1d3-4091-bff5-dcb8a4bd8f47:6928bea0-0771-4249-831c-59c1287fb167
+[W 2025-08-28 10:26:34.124 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 2.14ms referer=None
+[W 2025-08-28 10:26:34.129 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 3.62ms referer=None
+[W 2025-08-28 10:26:34.131 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 4.89ms referer=None
+[I 2025-08-28 10:26:34.131 ServerApp] 302 GET / (@127.0.0.1) 4.79ms
+[I 2025-08-28 10:26:34.145 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.83ms
+[W 2025-08-28 10:26:34.156 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 1.65ms referer=None
+[W 2025-08-28 10:26:34.157 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 2.07ms referer=None
+[W 2025-08-28 10:26:34.157 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 2.51ms referer=None
+[I 2025-08-28 10:29:55.067 ServerApp] Kernel interrupted: d48fd612-a1d3-4091-bff5-dcb8a4bd8f47
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2025-08-28 13:57:39.726 ServerApp] Starting buffering for d48fd612-a1d3-4091-bff5-dcb8a4bd8f47:129a8a7b-2f05-4a5b-9e5a-fc5b46eeeca7
+[I 2025-08-28 18:33:27.042 ServerApp] 302 GET / (@127.0.0.1) 0.42ms
+[I 2025-08-28 18:33:27.119 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.58ms
+[I 2025-08-28 18:33:53.265 ServerApp] 302 GET / (@127.0.0.1) 0.32ms
+[I 2025-08-28 18:33:53.267 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.32ms
+[I 2025-08-28 18:33:53.292 ServerApp] Connecting to kernel d48fd612-a1d3-4091-bff5-dcb8a4bd8f47.
+[I 2025-08-28 18:33:53.292 ServerApp] Discarding 6 buffered messages for d48fd612-a1d3-4091-bff5-dcb8a4bd8f47:129a8a7b-2f05-4a5b-9e5a-fc5b46eeeca7
+[I 2025-08-28 21:58:47.058 ServerApp] Starting buffering for d48fd612-a1d3-4091-bff5-dcb8a4bd8f47:74a93b65-0dae-427e-8863-8062d6727a04
+[I 2025-08-29 12:14:59.640 ServerApp] 302 GET / (@127.0.0.1) 0.58ms
+[I 2025-08-29 12:14:59.762 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.89ms
+[I 2025-08-29 12:15:10.436 ServerApp] 302 GET / (@127.0.0.1) 0.45ms
+[I 2025-08-29 12:15:10.439 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.63ms
+[I 2025-08-29 12:15:10.467 ServerApp] Connecting to kernel d48fd612-a1d3-4091-bff5-dcb8a4bd8f47.
+[I 2025-08-29 12:15:10.467 ServerApp] Discarding 46 buffered messages for d48fd612-a1d3-4091-bff5-dcb8a4bd8f47:74a93b65-0dae-427e-8863-8062d6727a04
+[I 2025-08-29 12:20:07.774 ServerApp] 302 GET / (@127.0.0.1) 0.44ms
+[I 2025-08-29 12:20:07.781 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.50ms
+[I 2025-08-29 12:20:07.811 ServerApp] Connecting to kernel 07e15f53-2cb0-4e16-b49b-019e6822bfa7.
+[W 2025-08-29 12:20:10.895 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 2.02ms referer=None
+[W 2025-08-29 12:20:10.896 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 2.40ms referer=None
+[W 2025-08-29 12:20:10.897 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 2.72ms referer=None
+[I 2025-08-29 12:20:10.897 ServerApp] 302 GET / (@127.0.0.1) 2.63ms
+[I 2025-08-29 12:20:10.901 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.46ms
+[W 2025-08-29 12:20:10.968 ServerApp] 404 GET /nbextensions/jupyter-vuetify/extension.js (@127.0.0.1) 1.02ms referer=None
+[W 2025-08-29 12:20:10.971 ServerApp] 404 GET /nbextensions/jupyter-js-widgets/extension.js (@127.0.0.1) 0.96ms referer=None
+[W 2025-08-29 12:20:10.972 ServerApp] 404 GET /nbextensions/jupyter-vue/extension.js (@127.0.0.1) 0.75ms referer=None
