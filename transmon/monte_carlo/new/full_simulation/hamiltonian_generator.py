@@ -194,10 +194,24 @@ class Hamiltonian:
         return np.abs(der*4.4)*1e6*A
     
     def calculate_dr_exact(self, A, omega):
-        energy01,energy02,energy03= calculate_floquet_energies(A, omega, self.H, self.H_control)
-        energy01_,energy02_,energy03_ = calculate_floquet_energies(A, omega, self.H_per, self.H_control_per)
-        der1 = (energy01_ - energy01) / self.epsilon
-        return self.static_rate(der1)
+        delta = 1e-6
+        phi = self.phi_ex
+
+        def get_energies(p):
+            Hs, charge_op, phi_zpf, noise, s = SNAIL(p, self.beta, self.N, self.Ej, self.Ec)
+            squid = [Hs, charge_op]
+            cavity = scqubits.Oscillator(E_osc=5.226, truncated_dim=6)
+            Hc = np.diag(cavity.eigenvals() - cavity.eigenvals()[0]) * 2 * np.pi
+            Vc = cavity.creation_operator() + cavity.annihilation_operator()
+            cavity_sys = [Hc, Vc]
+            H, H_control, _, _ = composite_sys(squid, cavity_sys, noise, s)
+            return np.array(calculate_floquet_energies(A, omega, H, H_control))
+
+        E_plus = get_energies(phi + delta)
+        E_minus = get_energies(phi - delta)
+
+        grad = (E_plus - E_minus) / (2 * delta)
+        return self.static_rate(grad[0])
 
     
     def optimal_omegad(self, A):
@@ -210,10 +224,16 @@ class Hamiltonian:
         def objective(omega_d):
             return calculate_dr_wrapper(A, omega_d)
 
-        # Try different bracketing values until we find ones that work
-        omega_min = 6.16 * 2 * np.pi
-        omega_max = 6.2 * 2 * np.pi
-        n_points = 20
+        if A < 5e-4 * 2 * np.pi:
+            center = self.omega_s + 10 * A
+            half_width = 5 * A
+            omega_min = center - half_width
+            omega_max = center + half_width
+            n_points = 20
+        else:
+            omega_min = 6.16 * 2 * np.pi
+            omega_max = 6.2 * 2 * np.pi
+            n_points = 20
         omega_range = np.linspace(omega_min, omega_max, n_points)
         
         # Find minimum point among test points
@@ -221,19 +241,19 @@ class Hamiltonian:
         min_idx = np.argmin(rates)
         
         if min_idx == 0 or min_idx == len(omega_range)-1:
-            # If minimum is at edge, return that value
             optimal_omega = omega_range[min_idx]
             min_rate = rates[min_idx]
         else:
-            # Use points around minimum for bracketing
             xa = omega_range[min_idx-1]
             xb = omega_range[min_idx]
             xc = omega_range[min_idx+1]
-            
-            # Use golden section search for optimization
             optimal_omega = golden(objective, brack=(xa, xb, xc))
             min_rate = objective(optimal_omega)
         
+        original_rate = objective(self.omega_s)
+        detuning = (optimal_omega - self.omega_s) / (2 * np.pi)
+        print(f"original_rate (omega_s) = {original_rate:.6e}, min_rate = {min_rate:.6e}")
+        print(f"optimal_omega_d = {optimal_omega/2/np.pi:.6f} GHz, detuning = {detuning*1e3:.4f} MHz")
         return optimal_omega/2/np.pi, min_rate
     
 
@@ -294,7 +314,8 @@ class Hamiltonian:
         noise = Ud@self.noise@U
         H = Ud@self.H@U
         H_control = Ud@self.H_control@U
-        return noise, H, H_control
+        s = Ud@self.s@U
+        return noise, H, H_control, s
 
     def setup_floquet_system(self, A, optimal_omega):
         # Define system parameters
