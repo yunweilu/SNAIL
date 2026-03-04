@@ -1,0 +1,4 @@
+original_rate (omega_s) = 2.324095e+00, min_rate = 2.324095e+00
+optimal_omega_d = 6.152015 GHz, detuning = 0.0000 MHz
+Saved averaged density matrices to: /home/yunwei/SNAIL/full_simulation copy/binonmial_code/avg_density_matrix_over_time.pkl
+avg_rho_tc shape: (400, 15, 15), avg_rho_cav shape: (400, 5, 5)

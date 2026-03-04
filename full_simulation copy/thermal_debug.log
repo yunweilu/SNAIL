@@ -1,0 +1,6 @@
+nohup: ignoring input
+original_rate (omega_s) = 1.299715e+04, min_rate = 2.450307e-04
+optimal_omega_d = 6.160035 GHz, detuning = 0.9463 MHz
+Running 100 trajectories, 10000 steps, ground state initial...
+Saved to thermal_debug_data.pkl
+Plot saved to thermal_debug_plot.pdf

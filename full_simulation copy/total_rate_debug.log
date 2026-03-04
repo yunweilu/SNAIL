@@ -1,0 +1,9 @@
+nohup: ignoring input
+[1/1] S0=1.00e-05: RUNNING...
+original_rate (omega_s) = 1.299715e+04, min_rate = 2.450307e-04
+optimal_omega_d = 6.160035 GHz, detuning = 0.9463 MHz
+  Running T1 (100 trajectories, 10000 steps)...
+  Running T2 (100 trajectories, 50000 steps)...
+  S0=1.00e-05: DONE
+  -> Saved to total_rate_debug_data.pkl
+=== ALL DONE ===

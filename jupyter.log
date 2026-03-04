@@ -1190,3 +1190,1945 @@ Call-back cb_f_in_zvode__user__routines failed.
 [I 2026-02-18 13:53:51.726 ServerApp] 302 GET / (@127.0.0.1) 0.36ms
 [I 2026-02-18 13:53:51.780 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.87ms
 [I 2026-02-18 13:53:51.781 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.41ms
+[I 2026-02-19 13:02:13.010 ServerApp] 302 GET / (@127.0.0.1) 0.51ms
+[I 2026-02-19 13:02:13.011 ServerApp] 302 GET / (@127.0.0.1) 0.36ms
+[I 2026-02-19 13:02:13.127 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.65ms
+[I 2026-02-19 13:02:13.139 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.53ms
+[I 2026-02-19 13:11:00.715 ServerApp] 302 GET / (@127.0.0.1) 0.33ms
+[I 2026-02-19 13:11:00.717 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.32ms
+[I 2026-02-19 13:11:00.738 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 13:11:35.757 ServerApp] Kernel restarted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+[I 2026-02-19 13:11:35.761 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:20c0d2f9-b672-42bc-9587-7064bc50f7dd
+[I 2026-02-19 13:11:35.767 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 13:11:35.767 ServerApp] Restoring connection for e579ff81-359d-40ea-a9d2-9d733c8d7e29:20c0d2f9-b672-42bc-9587-7064bc50f7dd
+[I 2026-02-19 13:11:41.348 ServerApp] Kernel restarted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+[I 2026-02-19 13:11:41.352 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:20c0d2f9-b672-42bc-9587-7064bc50f7dd
+[I 2026-02-19 13:11:41.357 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 13:11:41.357 ServerApp] Restoring connection for e579ff81-359d-40ea-a9d2-9d733c8d7e29:20c0d2f9-b672-42bc-9587-7064bc50f7dd
+[I 2026-02-19 13:13:37.266 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:20c0d2f9-b672-42bc-9587-7064bc50f7dd
+[I 2026-02-19 13:13:45.813 ServerApp] 302 GET / (@127.0.0.1) 0.50ms
+[I 2026-02-19 13:13:45.814 ServerApp] 302 GET / (@127.0.0.1) 0.28ms
+[I 2026-02-19 13:13:46.160 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.89ms
+[I 2026-02-19 13:13:46.161 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.95ms
+[I 2026-02-19 13:15:04.125 ServerApp] 302 GET / (@127.0.0.1) 0.48ms
+[I 2026-02-19 13:15:04.129 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.70ms
+[I 2026-02-19 13:15:04.183 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 13:15:06.975 ServerApp] Kernel interrupted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Process LokyProcess-18:
+Process LokyProcess-16:
+Process LokyProcess-14:
+Process LokyProcess-15:
+Process LokyProcess-13:
+Process LokyProcess-12:
+Process LokyProcess-9:
+Process LokyProcess-10:
+Process LokyProcess-4:
+Process LokyProcess-7:
+Process LokyProcess-5:
+Process LokyProcess-6:
+Process LokyProcess-1:
+Process LokyProcess-2:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 71, in _mul_np_vec
+    return out.as_ndarray().ravel()
+           ^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+
+During handling of the above exception, another exception occurred:
+
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 63, in _mul_np_vec
+    def _mul_np_vec(self, t, vec):
+    
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 69, in _mul_np_vec
+    out = self.system.matmul_data(t, state)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+  File "qutip/core/cy/qobjevo.pyx", line 1105, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "qutip/core/cy/qobjevo.pyx", line 1117, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "qutip/core/cy/_element.pyx", line 167, in qutip.core.cy._element._BaseElement.matmul_data_t
+
+During handling of the above exception, another exception occurred:
+
+  File "qutip/core/cy/_element.pyx", line 367, in qutip.core.cy._element._EvoElement.coeff
+Traceback (most recent call last):
+  File "qutip/core/cy/coefficient.pyx", line 220, in qutip.core.cy.coefficient.FunctionCoefficient.__call__
+Traceback (most recent call last):
+  File "/tmp/ipykernel_378386/1292359238.py", line 21, in <lambda>
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 70, in _mul_np_vec
+    column_stack_dense(out, inplace=True)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 67, in _mul_np_vec
+    state = _data.dense.fast_from_numpy(vec)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+
+During handling of the above exception, another exception occurred:
+
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 69, in _mul_np_vec
+    out = self.system.matmul_data(t, state)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 69, in _mul_np_vec
+    out = self.system.matmul_data(t, state)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "qutip/core/cy/qobjevo.pyx", line 1105, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "qutip/core/cy/qobjevo.pyx", line 1105, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 69, in _mul_np_vec
+    out = self.system.matmul_data(t, state)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "qutip/core/cy/qobjevo.pyx", line 1117, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "qutip/core/cy/qobjevo.pyx", line 1117, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "qutip/core/cy/qobjevo.pyx", line 1105, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "qutip/core/cy/qobjevo.pyx", line 1117, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "qutip/core/cy/_element.pyx", line 167, in qutip.core.cy._element._BaseElement.matmul_data_t
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "qutip/core/cy/_element.pyx", line 167, in qutip.core.cy._element._BaseElement.matmul_data_t
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "qutip/core/cy/_element.pyx", line 167, in qutip.core.cy._element._BaseElement.matmul_data_t
+  File "qutip/core/cy/_element.pyx", line 367, in qutip.core.cy._element._EvoElement.coeff
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 69, in _mul_np_vec
+    out = self.system.matmul_data(t, state)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 69, in _mul_np_vec
+    out = self.system.matmul_data(t, state)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "qutip/core/cy/_element.pyx", line 367, in qutip.core.cy._element._EvoElement.coeff
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 69, in _mul_np_vec
+    out = self.system.matmul_data(t, state)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 63, in _mul_np_vec
+    def _mul_np_vec(self, t, vec):
+    
+  File "qutip/core/cy/coefficient.pyx", line 220, in qutip.core.cy.coefficient.FunctionCoefficient.__call__
+  File "qutip/core/cy/_element.pyx", line 367, in qutip.core.cy._element._EvoElement.coeff
+  File "qutip/core/cy/coefficient.pyx", line 220, in qutip.core.cy.coefficient.FunctionCoefficient.__call__
+  File "qutip/core/cy/qobjevo.pyx", line 1105, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "qutip/core/cy/qobjevo.pyx", line 1105, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "/tmp/ipykernel_378386/1292359238.py", line 17, in <lambda>
+  File "qutip/core/cy/qobjevo.pyx", line 1105, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "/tmp/ipykernel_378386/1292359238.py", line 17, in <lambda>
+  File "qutip/core/cy/qobjevo.pyx", line 1117, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "qutip/core/cy/coefficient.pyx", line 220, in qutip.core.cy.coefficient.FunctionCoefficient.__call__
+  File "qutip/core/cy/qobjevo.pyx", line 1117, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "qutip/core/cy/qobjevo.pyx", line 1117, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+KeyboardInterrupt
+  File "/tmp/ipykernel_378386/1292359238.py", line 17, in <lambda>
+  File "qutip/core/cy/_element.pyx", line 167, in qutip.core.cy._element._BaseElement.matmul_data_t
+KeyboardInterrupt
+KeyboardInterrupt
+  File "qutip/core/cy/_element.pyx", line 167, in qutip.core.cy._element._BaseElement.matmul_data_t
+  File "qutip/core/cy/_element.pyx", line 167, in qutip.core.cy._element._BaseElement.matmul_data_t
+  File "qutip/core/cy/_element.pyx", line 367, in qutip.core.cy._element._EvoElement.coeff
+  File "qutip/core/cy/_element.pyx", line 367, in qutip.core.cy._element._EvoElement.coeff
+
+During handling of the above exception, another exception occurred:
+
+  File "qutip/core/cy/_element.pyx", line 367, in qutip.core.cy._element._EvoElement.coeff
+  File "qutip/core/cy/coefficient.pyx", line 220, in qutip.core.cy.coefficient.FunctionCoefficient.__call__
+  File "qutip/core/cy/coefficient.pyx", line 220, in qutip.core.cy.coefficient.FunctionCoefficient.__call__
+  File "qutip/core/cy/coefficient.pyx", line 220, in qutip.core.cy.coefficient.FunctionCoefficient.__call__
+Traceback (most recent call last):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+  File "/tmp/ipykernel_378386/1292359238.py", line 17, in <lambda>
+
+During handling of the above exception, another exception occurred:
+
+  File "/tmp/ipykernel_378386/1292359238.py", line 17, in <lambda>
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/tmp/ipykernel_378386/1292359238.py", line 17, in <lambda>
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+KeyboardInterrupt
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+
+During handling of the above exception, another exception occurred:
+
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+
+During handling of the above exception, another exception occurred:
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+KeyboardInterrupt
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 67, in _mul_np_vec
+    state = _data.dense.fast_from_numpy(vec)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+
+During handling of the above exception, another exception occurred:
+
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 463, in _process_worker
+    r = call_item()
+        ^^^^^^^^^^^
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 291, in __call__
+    return self.fn(*self.args, **self.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in __call__
+    return [func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/parallel.py", line 598, in <listcomp>
+    return [func(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_378386/1292359238.py", line 22, in simulate_trajectory
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/sesolve.py", line 127, in sesolve
+    return solver.run(psi0, tlist, e_ops=e_ops)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/solver_base.py", line 197, in run
+    for t, state in self._integrator.run(tlist):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/integrator.py", line 201, in run
+    yield self.integrate(t, False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 110, in integrate
+    self._ode_solver.integrate(t)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 438, in integrate
+    self._y, self.t = mth(self.f, self.jac or (lambda: None),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/scipy/integrate/_ode.py", line 1016, in run
+    y1, t, istate = self.runner(*args)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/qutip/solver/integrator/scipy_integrator.py", line 69, in _mul_np_vec
+    out = self.system.matmul_data(t, state)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "qutip/core/cy/qobjevo.pyx", line 1105, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "qutip/core/cy/qobjevo.pyx", line 1117, in qutip.core.cy.qobjevo.QobjEvo.matmul_data
+  File "qutip/core/cy/_element.pyx", line 167, in qutip.core.cy._element._BaseElement.matmul_data_t
+  File "qutip/core/cy/_element.pyx", line 367, in qutip.core.cy._element._EvoElement.coeff
+  File "qutip/core/cy/coefficient.pyx", line 220, in qutip.core.cy.coefficient.FunctionCoefficient.__call__
+  File "/tmp/ipykernel_378386/1292359238.py", line 21, in <lambda>
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py", line 466, in _process_worker
+    result_queue.put(_ResultItem(call_item.work_id, exception=exc))
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/queues.py", line 235, in put
+    with self._wlock:
+  File "/home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/backend/synchronize.py", line 119, in __enter__
+    return self._semlock.acquire()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[I 2026-02-19 13:15:11.055 ServerApp] Kernel restarted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+[I 2026-02-19 13:15:11.060 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:bdfdc0f8-07a2-4413-8032-1b8af659b05a
+[I 2026-02-19 13:15:11.066 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 13:15:11.066 ServerApp] Restoring connection for e579ff81-359d-40ea-a9d2-9d733c8d7e29:bdfdc0f8-07a2-4413-8032-1b8af659b05a
+[I 2026-02-19 14:13:07.103 ServerApp] 302 GET / (@127.0.0.1) 0.59ms
+[I 2026-02-19 14:13:07.103 ServerApp] 302 GET / (@127.0.0.1) 0.38ms
+[I 2026-02-19 14:13:07.166 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.72ms
+[I 2026-02-19 14:13:07.212 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.65ms
+[I 2026-02-19 14:13:16.192 ServerApp] 302 GET / (@127.0.0.1) 0.49ms
+[I 2026-02-19 14:13:16.194 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.51ms
+[I 2026-02-19 14:13:16.231 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 14:49:38.804 ServerApp] 302 GET / (@127.0.0.1) 0.50ms
+[I 2026-02-19 14:49:38.809 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.65ms
+[I 2026-02-19 14:49:38.833 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 15:04:59.448 ServerApp] Kernel interrupted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2026-02-19 15:13:23.384 ServerApp] Kernel interrupted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2026-02-19 15:18:22.073 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2026-02-19 15:18:22.080 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.54ms
+[I 2026-02-19 15:18:22.223 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 15:59:52.309 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:3b61356b-df9c-4f7e-97d9-8b0c1403b323
+[I 2026-02-19 17:25:38.380 ServerApp] 302 GET / (@127.0.0.1) 0.59ms
+[I 2026-02-19 17:25:38.381 ServerApp] 302 GET / (@127.0.0.1) 0.27ms
+[I 2026-02-19 17:25:38.887 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.78ms
+[I 2026-02-19 17:25:38.888 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.34ms
+[I 2026-02-19 18:31:31.250 ServerApp] 302 GET / (@127.0.0.1) 0.46ms
+[I 2026-02-19 18:31:31.251 ServerApp] 302 GET / (@127.0.0.1) 0.27ms
+[I 2026-02-19 18:31:31.477 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.83ms
+[I 2026-02-19 18:31:31.478 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.89ms
+[I 2026-02-19 19:06:22.671 ServerApp] 302 GET / (@127.0.0.1) 0.59ms
+[I 2026-02-19 19:06:22.672 ServerApp] 302 GET / (@127.0.0.1) 0.27ms
+[I 2026-02-19 19:06:23.016 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.81ms
+[I 2026-02-19 19:06:23.017 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.37ms
+[I 2026-02-19 19:06:29.973 ServerApp] 302 GET / (@127.0.0.1) 0.57ms
+[I 2026-02-19 19:06:29.985 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.74ms
+[I 2026-02-19 19:06:30.051 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 19:06:30.052 ServerApp] Discarding 9 buffered messages for e579ff81-359d-40ea-a9d2-9d733c8d7e29:3b61356b-df9c-4f7e-97d9-8b0c1403b323
+[I 2026-02-19 19:06:46.876 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:60d46d46-4174-40d4-a92a-8c9eef2ba031
+[I 2026-02-19 19:33:42.979 ServerApp] 302 GET / (@127.0.0.1) 0.55ms
+[I 2026-02-19 19:33:42.980 ServerApp] 302 GET / (@127.0.0.1) 0.40ms
+[I 2026-02-19 19:33:43.310 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.55ms
+[I 2026-02-19 19:33:43.311 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.23ms
+[I 2026-02-19 19:35:09.374 ServerApp] 302 GET / (@127.0.0.1) 0.53ms
+[I 2026-02-19 19:35:09.387 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.78ms
+[I 2026-02-19 19:35:09.464 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 19:35:09.464 ServerApp] Discarding 60 buffered messages for e579ff81-359d-40ea-a9d2-9d733c8d7e29:60d46d46-4174-40d4-a92a-8c9eef2ba031
+[I 2026-02-19 19:36:46.988 ServerApp] 302 GET / (@127.0.0.1) 0.55ms
+[I 2026-02-19 19:36:47.001 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.84ms
+[I 2026-02-19 19:36:47.048 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-19 19:41:54.964 ServerApp] Kernel interrupted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2026-02-19 19:42:19.558 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:96c0cef5-e473-4b42-ab32-7f0175bb72c5
+[I 2026-02-19 19:44:38.789 ServerApp] 302 GET / (@127.0.0.1) 0.52ms
+[I 2026-02-19 19:44:38.790 ServerApp] 302 GET / (@127.0.0.1) 0.24ms
+[I 2026-02-19 19:44:39.366 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.73ms
+[I 2026-02-19 19:44:39.367 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.31ms
+[I 2026-02-20 06:31:15.648 ServerApp] 302 GET / (@127.0.0.1) 0.48ms
+[I 2026-02-20 06:31:15.649 ServerApp] 302 GET / (@127.0.0.1) 0.28ms
+[I 2026-02-20 06:31:15.911 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.62ms
+[I 2026-02-20 06:31:15.912 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.39ms
+[I 2026-02-20 06:31:56.880 ServerApp] 302 GET / (@127.0.0.1) 0.51ms
+[I 2026-02-20 06:31:56.884 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.57ms
+[I 2026-02-20 06:31:56.970 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-20 06:31:56.971 ServerApp] Discarding 13 buffered messages for e579ff81-359d-40ea-a9d2-9d733c8d7e29:96c0cef5-e473-4b42-ab32-7f0175bb72c5
+[I 2026-02-20 08:26:49.035 ServerApp] 302 GET / (@127.0.0.1) 0.50ms
+[I 2026-02-20 08:26:49.035 ServerApp] 302 GET / (@127.0.0.1) 0.30ms
+[I 2026-02-20 08:26:49.091 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.66ms
+[I 2026-02-20 08:26:49.092 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.37ms
+[I 2026-02-20 08:26:49.950 ServerApp] 302 GET / (@127.0.0.1) 0.48ms
+[I 2026-02-20 08:26:49.952 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.47ms
+[I 2026-02-20 08:26:49.978 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-20 11:12:10.149 ServerApp] 302 GET / (@127.0.0.1) 0.49ms
+[I 2026-02-20 11:12:10.149 ServerApp] 302 GET / (@127.0.0.1) 0.29ms
+[I 2026-02-20 11:12:10.200 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.69ms
+[I 2026-02-20 11:12:10.201 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.43ms
+[I 2026-02-20 11:12:15.858 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2026-02-20 11:12:15.928 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.63ms
+[I 2026-02-20 11:12:15.989 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-20 11:22:07.559 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:f447e280-b675-4df7-bdf8-f78ef55d71b1
+[I 2026-02-20 13:36:41.257 ServerApp] 302 GET / (@127.0.0.1) 0.49ms
+[I 2026-02-20 13:36:41.257 ServerApp] 302 GET / (@127.0.0.1) 0.30ms
+[I 2026-02-20 13:36:41.341 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.75ms
+[I 2026-02-20 13:36:41.341 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.44ms
+[I 2026-02-20 14:43:50.979 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2026-02-20 14:43:50.980 ServerApp] 302 GET / (@127.0.0.1) 0.29ms
+[I 2026-02-20 14:43:51.112 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.65ms
+[I 2026-02-20 14:43:51.112 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.39ms
+[I 2026-02-20 14:43:58.876 ServerApp] 302 GET / (@127.0.0.1) 0.39ms
+[I 2026-02-20 14:43:58.879 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.42ms
+[I 2026-02-20 14:43:58.903 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-20 14:54:26.907 ServerApp] 302 GET / (@127.0.0.1) 0.32ms
+[I 2026-02-20 14:54:26.909 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.34ms
+[I 2026-02-20 14:54:26.944 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-20 15:26:56.783 ServerApp] Kernel interrupted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2026-02-20 15:28:43.565 ServerApp] Kernel interrupted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2026-02-20 17:39:07.666 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:f72d7e0c-e2c8-4eb5-a401-5099755f6687
+[I 2026-02-20 18:12:41.003 ServerApp] 302 GET / (@127.0.0.1) 0.51ms
+[I 2026-02-20 18:12:41.004 ServerApp] 302 GET / (@127.0.0.1) 0.30ms
+[I 2026-02-20 18:12:41.029 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.62ms
+[I 2026-02-20 18:12:41.029 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.35ms
+[I 2026-02-20 18:12:41.529 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2026-02-20 18:12:41.531 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.48ms
+[I 2026-02-20 18:12:41.559 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-20 19:06:21.606 ServerApp] 302 GET / (@127.0.0.1) 0.46ms
+[I 2026-02-20 19:06:21.610 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.51ms
+[I 2026-02-20 19:06:21.627 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-20 21:32:28.477 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2026-02-20 21:32:28.478 ServerApp] 302 GET / (@127.0.0.1) 0.34ms
+[I 2026-02-20 21:32:28.898 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.61ms
+[I 2026-02-20 21:32:28.899 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.33ms
+[I 2026-02-20 21:37:18.690 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:48148797-0684-444f-af5b-1a9142dcd613
+[I 2026-02-20 21:43:50.331 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2026-02-20 21:43:50.332 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.45ms
+[I 2026-02-20 21:43:50.362 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-20 21:43:57.719 ServerApp] 302 GET / (@127.0.0.1) 0.46ms
+[I 2026-02-20 21:43:57.724 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.54ms
+[I 2026-02-20 21:43:57.743 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-20 22:16:27.675 ServerApp] 302 GET / (@127.0.0.1) 0.68ms
+[I 2026-02-20 22:16:27.676 ServerApp] 302 GET / (@127.0.0.1) 0.45ms
+[I 2026-02-20 22:16:27.755 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.56ms
+[I 2026-02-20 22:16:27.756 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.37ms
+[I 2026-02-20 22:21:23.157 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:02336617-7a58-415e-b842-338be4f4736b
+[I 2026-02-20 23:09:53.829 ServerApp] 302 GET / (@127.0.0.1) 0.48ms
+[I 2026-02-20 23:09:53.830 ServerApp] 302 GET / (@127.0.0.1) 0.30ms
+[I 2026-02-20 23:09:53.908 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.69ms
+[I 2026-02-20 23:09:53.908 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.38ms
+[I 2026-02-21 07:01:23.726 ServerApp] 302 GET / (@127.0.0.1) 0.41ms
+[I 2026-02-21 07:01:23.726 ServerApp] 302 GET / (@127.0.0.1) 0.23ms
+[I 2026-02-21 07:01:23.820 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.53ms
+[I 2026-02-21 07:01:23.820 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.29ms
+[I 2026-02-21 07:33:25.158 ServerApp] 302 GET / (@127.0.0.1) 0.51ms
+[I 2026-02-21 07:33:25.160 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.50ms
+[I 2026-02-21 07:33:25.186 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-21 08:38:47.988 ServerApp] 302 GET / (@127.0.0.1) 0.37ms
+[I 2026-02-21 08:38:47.991 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.43ms
+[I 2026-02-21 08:38:48.010 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-02-21 11:14:40.186 ServerApp] 302 GET / (@127.0.0.1) 0.50ms
+[I 2026-02-21 11:14:40.187 ServerApp] 302 GET / (@127.0.0.1) 0.30ms
+[I 2026-02-21 11:14:40.224 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.69ms
+[I 2026-02-21 11:14:40.224 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.38ms
+[I 2026-02-21 11:18:02.030 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:6d4aaf11-9a55-4b9d-8a84-02a00d9c3ffa
+[I 2026-02-25 08:41:40.761 ServerApp] 302 GET / (@127.0.0.1) 0.42ms
+[I 2026-02-25 08:41:40.762 ServerApp] 302 GET / (@127.0.0.1) 0.35ms
+[I 2026-02-25 08:41:40.839 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.62ms
+[I 2026-02-25 08:41:40.842 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.42ms
+[I 2026-02-25 13:03:54.889 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2026-02-25 13:03:54.889 ServerApp] 302 GET / (@127.0.0.1) 0.29ms
+[I 2026-02-25 13:03:54.942 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.62ms
+[I 2026-02-25 13:03:54.942 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.38ms
+[I 2026-02-25 14:58:23.079 ServerApp] 302 GET / (@127.0.0.1) 0.48ms
+[I 2026-02-25 14:58:23.080 ServerApp] 302 GET / (@127.0.0.1) 0.30ms
+[I 2026-02-25 14:58:23.305 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.65ms
+[I 2026-02-25 14:58:23.306 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.38ms
+[I 2026-03-04 07:44:00.727 ServerApp] 302 GET / (@127.0.0.1) 0.45ms
+[I 2026-03-04 07:44:00.734 ServerApp] 302 GET / (@127.0.0.1) 0.39ms
+[I 2026-03-04 07:44:00.751 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.59ms
+[I 2026-03-04 07:44:00.759 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.58ms
+[I 2026-03-04 07:46:57.082 ServerApp] 302 GET / (@127.0.0.1) 0.48ms
+[I 2026-03-04 07:46:57.086 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.55ms
+[I 2026-03-04 07:46:57.107 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-03-04 07:47:24.070 ServerApp] Kernel restarted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+[I 2026-03-04 07:47:24.074 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:399c181e-b9bd-49ba-a711-7eaa006a6793
+[I 2026-03-04 07:47:24.081 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-03-04 07:47:24.081 ServerApp] Restoring connection for e579ff81-359d-40ea-a9d2-9d733c8d7e29:399c181e-b9bd-49ba-a711-7eaa006a6793
+[I 2026-03-04 07:48:23.563 ServerApp] Kernel interrupted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2026-03-04 07:55:15.113 ServerApp] 302 GET / (@127.0.0.1) 0.49ms
+[I 2026-03-04 07:55:15.116 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.62ms
+[I 2026-03-04 07:55:15.137 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-03-04 07:58:33.864 ServerApp] Kernel interrupted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2026-03-04 07:58:45.155 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:304193f0-783e-4615-bf44-deff1b321631
+[I 2026-03-04 08:09:36.306 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2026-03-04 08:09:36.310 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.62ms
+[I 2026-03-04 08:09:36.334 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-03-04 08:26:23.623 ServerApp] Kernel restarted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+[I 2026-03-04 08:26:23.627 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:b155e02d-840c-4e1c-a882-1e434f0567c5
+[I 2026-03-04 08:26:23.635 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-03-04 08:26:23.635 ServerApp] Restoring connection for e579ff81-359d-40ea-a9d2-9d733c8d7e29:b155e02d-840c-4e1c-a882-1e434f0567c5
