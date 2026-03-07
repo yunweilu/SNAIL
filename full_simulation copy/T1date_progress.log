@@ -1,0 +1,120 @@
+[2026-03-04 14:37:01] Starting fresh
+[2026-03-04 14:37:01] Total tasks: 15 (3 A values x 5 S0 values)
+[2026-03-04 14:37:01] [1/15] A=1.0mHz, S0=1.0e-06: RUNNING T1 + T2 simulation...
+[2026-03-04 14:38:54] Starting fresh
+[2026-03-04 14:38:54] Total tasks: 15 (3 A values x 5 S0 values)
+[2026-03-04 14:38:54] [1/15] A=1.0mHz, S0=1.0e-06: RUNNING T1 simulation...
+[2026-03-04 14:39:12] Starting fresh
+[2026-03-04 14:39:12] Total tasks: 15 (3 A values x 5 S0 values)
+[2026-03-04 14:39:12] [1/15] A=1.0mHz, S0=1.0e-06: RUNNING T1 simulation...
+[2026-03-04 14:40:18] Starting fresh
+[2026-03-04 14:40:18] Total tasks: 15 (3 A values x 5 S0 values)
+[2026-03-04 14:40:18] [1/15] A=1.0mHz, S0=1.0e-06: RUNNING T1 simulation...
+[2026-03-04 14:45:48] [1/15] A=1.0mHz, S0=1.0e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 14:45:48]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 14:45:48] [2/15] A=1.0mHz, S0=1.8e-06: RUNNING T1 simulation...
+[2026-03-04 14:51:22] [2/15] A=1.0mHz, S0=1.8e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 14:51:22]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 14:51:22] [3/15] A=1.0mHz, S0=3.2e-06: RUNNING T1 simulation...
+[2026-03-04 14:57:16] [3/15] A=1.0mHz, S0=3.2e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 14:57:16]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 14:57:16] [4/15] A=1.0mHz, S0=5.6e-06: RUNNING T1 simulation...
+[2026-03-04 15:03:25] [4/15] A=1.0mHz, S0=5.6e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 15:03:25]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 15:03:25] [5/15] A=1.0mHz, S0=1.0e-05: RUNNING T1 simulation...
+[2026-03-04 15:09:43] [5/15] A=1.0mHz, S0=1.0e-05: DONE (T1 shape=(100, 5000))
+[2026-03-04 15:09:43]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 15:09:43] [6/15] A=3.0mHz, S0=1.0e-06: RUNNING T1 simulation...
+[2026-03-04 15:16:22] [6/15] A=3.0mHz, S0=1.0e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 15:16:22]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 15:16:22] [7/15] A=3.0mHz, S0=1.8e-06: RUNNING T1 simulation...
+[2026-03-04 15:23:04] [7/15] A=3.0mHz, S0=1.8e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 15:23:04]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 15:23:04] [8/15] A=3.0mHz, S0=3.2e-06: RUNNING T1 simulation...
+[2026-03-04 15:29:58] [8/15] A=3.0mHz, S0=3.2e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 15:29:58]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 15:29:58] [9/15] A=3.0mHz, S0=5.6e-06: RUNNING T1 simulation...
+[2026-03-04 15:37:12] [9/15] A=3.0mHz, S0=5.6e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 15:37:12]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 15:37:12] [10/15] A=3.0mHz, S0=1.0e-05: RUNNING T1 simulation...
+[2026-03-04 15:44:26] [10/15] A=3.0mHz, S0=1.0e-05: DONE (T1 shape=(100, 5000))
+[2026-03-04 15:44:26]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 15:44:26] [11/15] A=5.0mHz, S0=1.0e-06: RUNNING T1 simulation...
+[2026-03-04 15:50:54] [11/15] A=5.0mHz, S0=1.0e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 15:50:54]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 15:50:54] [12/15] A=5.0mHz, S0=1.8e-06: RUNNING T1 simulation...
+[2026-03-04 15:57:16] [12/15] A=5.0mHz, S0=1.8e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 15:57:16]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 15:57:16] [13/15] A=5.0mHz, S0=3.2e-06: RUNNING T1 simulation...
+[2026-03-04 16:03:34] [13/15] A=5.0mHz, S0=3.2e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 16:03:34]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 16:03:34] [14/15] A=5.0mHz, S0=5.6e-06: RUNNING T1 simulation...
+[2026-03-04 16:09:52] [14/15] A=5.0mHz, S0=5.6e-06: DONE (T1 shape=(100, 5000))
+[2026-03-04 16:09:52]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 16:09:52] [15/15] A=5.0mHz, S0=1.0e-05: RUNNING T1 simulation...
+[2026-03-04 16:16:15] [15/15] A=5.0mHz, S0=1.0e-05: DONE (T1 shape=(100, 5000))
+[2026-03-04 16:16:15]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 16:16:15] === ALL T1 SIMULATIONS DONE ===
+[2026-03-04 16:24:38] Loaded existing raw data from /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 16:24:38] Total tasks: 1 (1 A values x 1 S0 values)
+[2026-03-04 16:24:38] [1/1] A=0.0mHz, S0=1.0e-05: RUNNING T1 simulation...
+[2026-03-04 16:28:55] [1/1] A=0.0mHz, S0=1.0e-05: DONE (T1 shape=(100, 5000))
+[2026-03-04 16:28:55]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 16:28:55] === ALL T1 SIMULATIONS DONE ===
+[2026-03-04 16:34:28] Loaded existing raw data from /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 16:34:28] Total tasks: 5 (1 A values x 5 S0 values)
+[2026-03-04 16:34:28] [1/5] A=0.1mHz, S0=1.0e-06: RUNNING T1 simulation...
+[2026-03-04 20:50:28] Starting fresh
+[2026-03-04 20:50:28] Total tasks: 15 (3 A values x 5 S0 values)
+[2026-03-04 20:50:28] [1/15] A=0.1mHz, S0=1.0e-06: RUNNING T1 simulation...
+[2026-03-04 20:50:48] [1/15] A=0.1mHz, S0=1.0e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:50:48]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:50:48] [2/15] A=0.1mHz, S0=1.8e-06: RUNNING T1 simulation...
+[2026-03-04 20:51:05] [2/15] A=0.1mHz, S0=1.8e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:51:05]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:51:05] [3/15] A=0.1mHz, S0=3.2e-06: RUNNING T1 simulation...
+[2026-03-04 20:51:21] [3/15] A=0.1mHz, S0=3.2e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:51:21]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:51:21] [4/15] A=0.1mHz, S0=5.6e-06: RUNNING T1 simulation...
+[2026-03-04 20:51:38] [4/15] A=0.1mHz, S0=5.6e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:51:38]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:51:38] [5/15] A=0.1mHz, S0=1.0e-05: RUNNING T1 simulation...
+[2026-03-04 20:51:55] [5/15] A=0.1mHz, S0=1.0e-05: DONE (T1 shape=(100, 100))
+[2026-03-04 20:51:55]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:51:55] [6/15] A=3.0mHz, S0=1.0e-06: RUNNING T1 simulation...
+[2026-03-04 20:52:16] [6/15] A=3.0mHz, S0=1.0e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:52:16]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:52:16] [7/15] A=3.0mHz, S0=1.8e-06: RUNNING T1 simulation...
+[2026-03-04 20:52:38] [7/15] A=3.0mHz, S0=1.8e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:52:38]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:52:38] [8/15] A=3.0mHz, S0=3.2e-06: RUNNING T1 simulation...
+[2026-03-04 20:53:00] [8/15] A=3.0mHz, S0=3.2e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:53:00]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:53:00] [9/15] A=3.0mHz, S0=5.6e-06: RUNNING T1 simulation...
+[2026-03-04 20:53:22] [9/15] A=3.0mHz, S0=5.6e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:53:22]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:53:22] [10/15] A=3.0mHz, S0=1.0e-05: RUNNING T1 simulation...
+[2026-03-04 20:53:45] [10/15] A=3.0mHz, S0=1.0e-05: DONE (T1 shape=(100, 100))
+[2026-03-04 20:53:45]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:53:45] [11/15] A=5.0mHz, S0=1.0e-06: RUNNING T1 simulation...
+[2026-03-04 20:54:06] [11/15] A=5.0mHz, S0=1.0e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:54:06]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:54:06] [12/15] A=5.0mHz, S0=1.8e-06: RUNNING T1 simulation...
+[2026-03-04 20:54:27] [12/15] A=5.0mHz, S0=1.8e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:54:27]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:54:27] [13/15] A=5.0mHz, S0=3.2e-06: RUNNING T1 simulation...
+[2026-03-04 20:54:48] [13/15] A=5.0mHz, S0=3.2e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:54:48]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:54:48] [14/15] A=5.0mHz, S0=5.6e-06: RUNNING T1 simulation...
+[2026-03-04 20:55:09] [14/15] A=5.0mHz, S0=5.6e-06: DONE (T1 shape=(100, 100))
+[2026-03-04 20:55:09]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:55:09] [15/15] A=5.0mHz, S0=1.0e-05: RUNNING T1 simulation...
+[2026-03-04 20:55:31] [15/15] A=5.0mHz, S0=1.0e-05: DONE (T1 shape=(100, 100))
+[2026-03-04 20:55:31]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:55:31] === ALL T1 SIMULATIONS DONE ===
+[2026-03-04 20:56:05] Loaded existing raw data from /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:56:05] Total tasks: 1 (1 A values x 1 S0 values)
+[2026-03-04 20:56:05] [1/1] A=0.0mHz, S0=0.0e+00: RUNNING T1 simulation...
+[2026-03-04 20:56:14] [1/1] A=0.0mHz, S0=0.0e+00: DONE (T1 shape=(100, 100))
+[2026-03-04 20:56:14]   -> Saved raw data to /home/yunwei/SNAIL/full_simulation copy/T1date_total_rate_raw_data.pkl
+[2026-03-04 20:56:14] === ALL T1 SIMULATIONS DONE ===

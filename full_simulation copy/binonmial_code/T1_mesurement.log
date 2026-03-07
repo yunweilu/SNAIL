@@ -1,0 +1,44 @@
+nohup: ignoring input
+Running T1 simulation: A/(2π) = 10.0 mHz, S0 = 1.0e-05
+  levels=(transmon=3, cavity=5), t_max=100000, num_realizations=100, t1_sim_time=1000
+
+==================================================
+Initial Floquet state index = 1; fitting P01+P11+P21
+original_rate (omega_s) = 1.716217e+01, min_rate = 3.517187e-06
+optimal_omega_d = 6.182419 GHz, detuning = 30.4043 MHz
+  avg_values_T1 shape: (100, 50)
+  Running bootstrap (1000 samples) ...
+  T1(idx=1) = 7.931861e+06 ± 2.836591e+02
+  1/T1(idx=1) = 1.260738e-07
+==================================================
+
+==================================================
+Initial Floquet state index = 2; fitting P02+P12+P22
+original_rate (omega_s) = 1.716217e+01, min_rate = 3.517187e-06
+optimal_omega_d = 6.182419 GHz, detuning = 30.4043 MHz
+  avg_values_T1 shape: (100, 50)
+  Running bootstrap (1000 samples) ...
+  T1(idx=2) = 3.968768e+06 ± 1.716319e+02
+  1/T1(idx=2) = 2.519674e-07
+==================================================
+
+==================================================
+Initial Floquet state index = 3; fitting P03+P13+P23
+original_rate (omega_s) = 1.716217e+01, min_rate = 3.517187e-06
+optimal_omega_d = 6.182419 GHz, detuning = 30.4043 MHz
+  avg_values_T1 shape: (100, 50)
+  Running bootstrap (1000 samples) ...
+  T1(idx=3) = 2.647560e+06 ± 1.243714e+02
+  1/T1(idx=3) = 3.777063e-07
+==================================================
+
+==================================================
+Initial Floquet state index = 4; fitting P04+P14+P24
+original_rate (omega_s) = 1.716217e+01, min_rate = 3.517187e-06
+optimal_omega_d = 6.182419 GHz, detuning = 30.4043 MHz
+  avg_values_T1 shape: (100, 50)
+  Running bootstrap (1000 samples) ...
+  T1(idx=4) = 1.986739e+06 ± 1.108919e+02
+  1/T1(idx=4) = 5.033375e-07
+==================================================
+Total runtime: 969.7 s

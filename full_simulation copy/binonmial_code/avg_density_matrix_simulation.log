@@ -1,4 +1,7 @@
+nohup: ignoring input
 original_rate (omega_s) = 2.324095e+00, min_rate = 2.324095e+00
 optimal_omega_d = 6.152015 GHz, detuning = 0.0000 MHz
-Saved averaged density matrices to: /home/yunwei/SNAIL/full_simulation copy/binonmial_code/avg_density_matrix_over_time.pkl
-avg_rho_tc shape: (400, 15, 15), avg_rho_cav shape: (400, 5, 5)
+UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+ /home/yunwei/.conda/envs/yunwei_local/lib/python3.11/site-packages/joblib/externals/loky/process_executor.py: 752original_rate (omega_s) = 2.117684e+01, min_rate = 3.517187e-06
+optimal_omega_d = 6.172060 GHz, detuning = 20.0446 MHz
+Saved figure to: /home/yunwei/SNAIL/full_simulation copy/binonmial_code/cavity_wigner_10points_20260305_141339.png

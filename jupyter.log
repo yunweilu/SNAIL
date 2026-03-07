@@ -3132,3 +3132,241 @@ Call-back cb_f_in_zvode__user__routines failed.
 [I 2026-03-04 08:26:23.627 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:b155e02d-840c-4e1c-a882-1e434f0567c5
 [I 2026-03-04 08:26:23.635 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
 [I 2026-03-04 08:26:23.635 ServerApp] Restoring connection for e579ff81-359d-40ea-a9d2-9d733c8d7e29:b155e02d-840c-4e1c-a882-1e434f0567c5
+[I 2026-03-04 14:15:40.992 ServerApp] 302 GET / (@127.0.0.1) 0.63ms
+[I 2026-03-04 14:15:40.993 ServerApp] 302 GET / (@127.0.0.1) 0.28ms
+[I 2026-03-04 14:15:41.322 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 1.30ms
+[I 2026-03-04 14:15:41.323 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.31ms
+[I 2026-03-04 14:16:15.402 ServerApp] 302 GET / (@127.0.0.1) 0.60ms
+[I 2026-03-04 14:16:15.425 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.67ms
+[I 2026-03-04 14:16:15.462 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-03-04 14:39:09.183 ServerApp] Kernel restarted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+[I 2026-03-04 14:39:09.187 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:613335ac-3ea8-40d8-9eae-3eb7a5046b7b
+[I 2026-03-04 14:39:09.193 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-03-04 14:39:09.193 ServerApp] Restoring connection for e579ff81-359d-40ea-a9d2-9d733c8d7e29:613335ac-3ea8-40d8-9eae-3eb7a5046b7b
+[I 2026-03-04 14:39:29.627 ServerApp] Kernel interrupted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2026-03-04 14:40:16.783 ServerApp] Kernel restarted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+[I 2026-03-04 14:40:16.787 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:613335ac-3ea8-40d8-9eae-3eb7a5046b7b
+[I 2026-03-04 14:40:16.793 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-03-04 14:40:16.793 ServerApp] Restoring connection for e579ff81-359d-40ea-a9d2-9d733c8d7e29:613335ac-3ea8-40d8-9eae-3eb7a5046b7b
+[I 2026-03-04 16:37:37.039 ServerApp] Kernel interrupted: e579ff81-359d-40ea-a9d2-9d733c8d7e29
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+capi_return is NULL
+Call-back cb_f_in_zvode__user__routines failed.
+[I 2026-03-04 19:42:45.906 ServerApp] 302 GET / (@127.0.0.1) 0.43ms
+[I 2026-03-04 19:42:45.921 ServerApp] 302 GET / (@127.0.0.1) 0.43ms
+[I 2026-03-04 19:42:45.937 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.65ms
+[I 2026-03-04 19:42:45.940 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.40ms
+[I 2026-03-04 19:45:00.370 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:613335ac-3ea8-40d8-9eae-3eb7a5046b7b
+[I 2026-03-04 20:50:22.135 ServerApp] 302 GET / (@127.0.0.1) 0.50ms
+[I 2026-03-04 20:50:22.137 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.53ms
+[I 2026-03-04 20:50:22.163 ServerApp] Connecting to kernel e579ff81-359d-40ea-a9d2-9d733c8d7e29.
+[I 2026-03-05 00:35:22.432 ServerApp] Starting buffering for e579ff81-359d-40ea-a9d2-9d733c8d7e29:dfd4b4cc-d66f-4455-be0d-2b0bdb853dc3
+[I 2026-03-05 07:22:15.150 ServerApp] 302 GET / (@127.0.0.1) 0.46ms
+[I 2026-03-05 07:22:15.150 ServerApp] 302 GET / (@127.0.0.1) 0.29ms
+[I 2026-03-05 07:22:15.518 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.65ms
+[I 2026-03-05 07:22:15.518 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.38ms
+[I 2026-03-05 09:10:05.031 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2026-03-05 09:10:05.032 ServerApp] 302 GET / (@127.0.0.1) 0.30ms
+[I 2026-03-05 09:10:05.212 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.64ms
+[I 2026-03-05 09:10:05.213 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.38ms
+[I 2026-03-05 12:03:34.755 ServerApp] 302 GET / (@127.0.0.1) 2.24ms
+[I 2026-03-05 12:03:34.757 ServerApp] 302 GET / (@127.0.0.1) 0.50ms
+[I 2026-03-05 12:05:53.868 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 1.56ms
+[I 2026-03-05 12:05:53.869 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.54ms
