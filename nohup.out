@@ -487,3 +487,108 @@ Error: Cannot find module 'worker_threads'
 [I 2026-02-06 20:01:36.153 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
 [C 2026-02-07 09:28:04.621 ServerApp] received signal 15, stopping
 [I 2026-02-07 09:28:04.622 ServerApp] Shutting down 5 extensions
+[I 2026-03-07 19:51:35.371 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2026-03-07 19:51:35.374 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2026-03-07 19:51:35.376 ServerApp] jupyterlab | extension was successfully linked.
+[W 2026-03-07 19:51:35.377 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2026-03-07 19:51:35.380 ServerApp] notebook | extension was successfully linked.
+[I 2026-03-07 19:51:35.556 ServerApp] notebook_shim | extension was successfully linked.
+[I 2026-03-07 19:51:35.572 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2026-03-07 19:51:35.573 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-03-07 19:51:35.574 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2026-03-07 19:51:35.577 LabApp] JupyterLab extension loaded from /home/yunwei/.local/lib/python3.8/site-packages/jupyterlab
+[I 2026-03-07 19:51:35.577 LabApp] JupyterLab application directory is /home/yunwei/.local/share/jupyter/lab
+[I 2026-03-07 19:51:35.577 LabApp] Extension Manager is 'pypi'.
+[I 2026-03-07 19:51:35.584 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2026-03-07 19:51:35.586 ServerApp] notebook | extension was successfully loaded.
+[W 2026-03-07 19:51:35.587 ServerApp] Permission to listen on port 1000 denied.
+[W 2026-03-07 19:51:35.587 ServerApp] Permission to listen on port 1001 denied.
+[W 2026-03-07 19:51:35.587 ServerApp] Permission to listen on port 1002 denied.
+[W 2026-03-07 19:51:35.587 ServerApp] Permission to listen on port 1003 denied.
+[W 2026-03-07 19:51:35.587 ServerApp] Permission to listen on port 1004 denied.
+[I 2026-03-07 19:51:35.587 ServerApp] Serving notebooks from local directory: /home/yunwei/SNAIL
+[I 2026-03-07 19:51:35.587 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2026-03-07 19:51:35.587 ServerApp] http://mononoke:1057/tree?token=...
+[I 2026-03-07 19:51:35.587 ServerApp]     http://127.0.0.1:1057/tree?token=...
+[I 2026-03-07 19:51:35.587 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2026-03-07 19:51:35.609 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2026-03-07 19:51:50.704 ServerApp] 302 GET / (@127.0.0.1) 0.53ms
+[I 2026-03-07 19:51:50.709 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.63ms
+[W 2026-03-07 19:51:50.742 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/yunwei/.local/lib/python3.8/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/yunwei/.local/lib/python3.8/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/home/yunwei/.local/lib/python3.8/site-packages/jupyter_server/base/handlers.py", line 783, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2026-03-07 19:51:50.744 ServerApp] 403 GET /api/kernelspecs?1772934710737 (@127.0.0.1) 1.98ms referer=None
+[W 2026-03-07 19:51:50.751 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/yunwei/.local/lib/python3.8/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/yunwei/.local/lib/python3.8/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/home/yunwei/.local/lib/python3.8/site-packages/jupyter_server/base/handlers.py", line 783, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2026-03-07 19:51:50.752 ServerApp] 403 GET /api/kernels?1772934710739 (@127.0.0.1) 0.97ms referer=None
+[W 2026-03-07 19:51:50.753 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/yunwei/.local/lib/python3.8/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/yunwei/.local/lib/python3.8/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/home/yunwei/.local/lib/python3.8/site-packages/jupyter_server/base/handlers.py", line 783, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2026-03-07 19:51:50.753 ServerApp] 403 GET /api/kernels?1772934710742 (@127.0.0.1) 0.91ms referer=None
+[W 2026-03-07 19:51:50.754 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/yunwei/.local/lib/python3.8/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/yunwei/.local/lib/python3.8/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/home/yunwei/.local/lib/python3.8/site-packages/jupyter_server/base/handlers.py", line 783, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2026-03-07 19:51:50.755 ServerApp] 403 GET /api/sessions?1772934710745 (@127.0.0.1) 1.30ms referer=None
+[W 2026-03-07 19:51:50.755 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/home/yunwei/.local/lib/python3.8/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/yunwei/.local/lib/python3.8/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/home/yunwei/.local/lib/python3.8/site-packages/jupyter_server/base/handlers.py", line 783, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2026-03-07 19:51:50.755 ServerApp] 403 GET /api/kernelspecs?1772934710749 (@127.0.0.1) 1.74ms referer=None
+[I 2026-03-07 19:51:57.985 ServerApp] 302 GET / (@127.0.0.1) 0.46ms
+[I 2026-03-07 19:51:57.989 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.50ms
+[I 2026-03-07 19:51:59.668 ServerApp] 302 GET / (@127.0.0.1) 0.51ms
+[I 2026-03-07 19:51:59.670 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.57ms
+[I 2026-03-07 19:52:20.479 ServerApp] 302 GET / (@127.0.0.1) 0.51ms
+[I 2026-03-07 19:52:20.481 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.57ms
+[I 2026-03-07 19:52:27.159 ServerApp] 302 GET / (@127.0.0.1) 0.46ms
+[I 2026-03-07 19:52:27.163 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.50ms
+[I 2026-03-07 19:52:32.624 ServerApp] 302 GET / (@127.0.0.1) 0.47ms
+[I 2026-03-07 19:52:32.626 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.48ms
+[I 2026-03-07 19:52:32.689 ServerApp] Kernel started: 78de2765-85fb-49d7-b9b1-9c3e66060808
+[I 2026-03-07 19:52:33.044 ServerApp] Connecting to kernel 78de2765-85fb-49d7-b9b1-9c3e66060808.
+[I 2026-03-07 19:52:56.866 ServerApp] Starting buffering for 78de2765-85fb-49d7-b9b1-9c3e66060808:1d3d5227-4dc0-4fba-a6ef-f4ff51d7c46a
+[I 2026-03-07 19:53:07.926 ServerApp] 302 GET / (@127.0.0.1) 0.52ms
+[I 2026-03-07 19:53:08.126 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.69ms
+[I 2026-03-07 19:53:10.216 ServerApp] Connecting to kernel 78de2765-85fb-49d7-b9b1-9c3e66060808.
+[I 2026-03-07 19:56:33.306 ServerApp] Starting buffering for 78de2765-85fb-49d7-b9b1-9c3e66060808:c9bb890d-f113-407a-b13e-7d971b692892
+[I 2026-03-08 12:08:51.686 ServerApp] 302 GET / (@127.0.0.1) 0.51ms
+[I 2026-03-08 12:08:54.789 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.63ms
+[I 2026-03-08 12:09:00.969 ServerApp] 302 GET / (@127.0.0.1) 0.33ms
+[I 2026-03-08 12:09:00.971 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.36ms
+[I 2026-03-08 12:09:00.992 ServerApp] Connecting to kernel 78de2765-85fb-49d7-b9b1-9c3e66060808.
+[I 2026-03-08 12:09:00.992 ServerApp] Discarding 88 buffered messages for 78de2765-85fb-49d7-b9b1-9c3e66060808:c9bb890d-f113-407a-b13e-7d971b692892
+[I 2026-03-08 12:33:49.660 ServerApp] 302 GET / (@127.0.0.1) 0.45ms
+[I 2026-03-08 12:33:49.727 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.61ms
+[I 2026-03-08 12:33:53.296 ServerApp] 302 GET / (@127.0.0.1) 0.42ms
+[I 2026-03-08 12:33:53.370 JupyterNotebookApp] 302 GET /tree? (@127.0.0.1) 0.61ms
+[I 2026-03-08 12:33:53.982 ServerApp] Connecting to kernel 78de2765-85fb-49d7-b9b1-9c3e66060808.
