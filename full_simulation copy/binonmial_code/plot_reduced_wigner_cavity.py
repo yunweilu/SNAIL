@@ -2,12 +2,43 @@ import argparse
 import pickle
 from pathlib import Path
 from datetime import datetime
+from importlib.machinery import SourceFileLoader
 
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import qutip as qt
+from matplotlib.colors import LinearSegmentedColormap
 
 from matrix_elements_playground import build_matrix_elements
+
+
+# Diverging map with explicit white center so W=0 is white.
+WIGNER_CMAP = LinearSegmentedColormap.from_list(
+    "wigner_blue_white_red",
+    ["#2166ac", "#ffffff", "#b2182b"],
+    N=256,
+)
+
+
+def _style_setup():
+    root = Path(__file__).resolve().parents[3]
+    candidate_paths = [
+        root / "SNAIL_new" / "plot_instruction",
+        root / "plot prompt",
+    ]
+    for path in candidate_paths:
+        if not path.exists():
+            continue
+        try:
+            style_mod = SourceFileLoader("plot_prompt_wigner_mod", str(path)).load_module()
+            mpl.rcParams.update(style_mod.normal_plot)
+            return style_mod
+        except SyntaxError:
+            continue
+    raise RuntimeError(
+        f"Could not load plot style module from: {[str(p) for p in candidate_paths]}"
+    )
 
 
 def load_reduced_cavity_data(data_path, case="undriven"):
@@ -274,6 +305,25 @@ def _apply_case_correction(data_path, case, time_points, avg_rho_cav, fit_driven
     return apply_self_kerr_phase_removal(avg_rho_cav, time_points, k_case)
 
 
+def report_fidelity_t0_to_target_us(time_points, avg_rho_cav, case_label, target_us=300.0):
+    """Print fidelity between t=0 and t≈target_us for a given case."""
+    if len(time_points) == 0:
+        print(f"{case_label}: no time points available for fidelity report.")
+        return
+
+    target_ns = float(target_us) * 1e3
+    idx_target = int(np.argmin(np.abs(time_points - target_ns)))
+
+    rho_0 = qt.Qobj(np.asarray(avg_rho_cav[0], dtype=complex), dims=[[5], [5]])
+    rho_t = qt.Qobj(np.asarray(avg_rho_cav[idx_target], dtype=complex), dims=[[5], [5]])
+    fid = float(qt.metrics.fidelity(rho_0, rho_t))
+
+    print(
+        f"{case_label}: F[t=0, t≈{target_us:.0f} us] = {fid:.6f} "
+        f"(nearest t={time_points[idx_target] / 1e3:.2f} us, idx={idx_target})"
+    )
+
+
 def plot_wigner(rho_cav, t_value, xlim=6.0, grid=201, save_path=None, dpi=200):
     x = np.linspace(-xlim, xlim, grid)
     W = qt.wigner(rho_cav, x, x)
@@ -321,7 +371,7 @@ def plot_wigner_10points(avg_rho_cav, time_points, xlim=6.0, grid=201, save_path
     axes = axes.ravel()
     cf = None
     for ax, idx, W in zip(axes, plot_indices, w_list):
-        cf = ax.contourf(x, x, W, levels=levels, cmap="RdBu_r")
+        cf = ax.contourf(x, x, W, levels=levels, cmap=WIGNER_CMAP)
         ax.contour(x, x, W, levels=[0], colors="k", linewidths=0.6)
         ax.set_title(f"t={time_points[idx]:.2f} ns")
         ax.set_xlabel("q")
@@ -344,62 +394,62 @@ def plot_wigner_10points(avg_rho_cav, time_points, xlim=6.0, grid=201, save_path
     plt.show()
 
 
-def plot_wigner_10points_both(
-    undriven_data, driven_data, xlim=6.0, grid=201, save_path=None, dpi=200
+def plot_wigner_three_snapshots(
+    undriven_data,
+    driven_data,
+    style_mod,
+    xlim=6.0,
+    grid=201,
+    save_path=None,
+    dpi=200,
 ):
+    """
+    Plot three requested panels:
+      1) undriven at t=0
+      2) undriven at final t
+      3) driven at final t
+    """
     t_u, rho_u = undriven_data
     t_d, rho_d = driven_data
+    if len(t_u) == 0 or len(t_d) == 0:
+        raise ValueError("Time points are empty for undriven or driven data.")
 
-    def prepare(time_points, avg_rho_cav):
-        n_t = len(time_points)
-        if n_t == 0:
-            raise ValueError("No time points found in input data.")
-        n_plot = min(10, n_t)
-        idx = np.arange(n_t, dtype=int) if n_t <= 10 else np.linspace(0, n_t - 1, n_plot, dtype=int)
-        x = np.linspace(-xlim, xlim, grid)
-        w_list = [qt.wigner(qt.Qobj(avg_rho_cav[i], dims=[[5], [5]]), x, x) for i in idx]
-        return idx, x, w_list
+    idx_u0 = 0
+    idx_uf = len(t_u) - 1
+    idx_df = len(t_d) - 1
 
-    idx_u, x, w_u = prepare(t_u, rho_u)
-    idx_d, _, w_d = prepare(t_d, rho_d)
+    snapshots = [
+        ("Undriven", float(t_u[idx_u0]), qt.Qobj(rho_u[idx_u0], dims=[[5], [5]])),
+        ("Undriven", float(t_u[idx_uf]), qt.Qobj(rho_u[idx_uf], dims=[[5], [5]])),
+        ("Driven", float(t_d[idx_df]), qt.Qobj(rho_d[idx_df], dims=[[5], [5]])),
+    ]
 
-    wmin = min(min(np.min(w) for w in w_u), min(np.min(w) for w in w_d))
-    wmax = max(max(np.max(w) for w in w_u), max(np.max(w) for w in w_d))
-    levels = np.linspace(wmin, wmax, 120)
+    x = np.linspace(-xlim, xlim, grid)
+    w_list = [qt.wigner(rho, x, x) for _, _, rho in snapshots]
+    # Use one shared symmetric color range across all three panels.
+    wmin = min(np.min(w) for w in w_list)
+    wmax = max(np.max(w) for w in w_list)
+    vmax = max(abs(wmin), abs(wmax))
+    levels = np.linspace(-vmax, vmax, 121)
 
-    fig, axes = plt.subplots(2, 10, figsize=(32, 7), constrained_layout=True)
+    base_w, base_h = mpl.rcParams["figure.figsize"]
+    fig, axes = plt.subplots(1, 3, figsize=(base_w * 2.9, base_h), constrained_layout=True)
     cf = None
-    for j in range(10):
-        ax_u = axes[0, j]
-        ax_d = axes[1, j]
-
-        if j < len(idx_u):
-            W = w_u[j]
-            cf = ax_u.contourf(x, x, W, levels=levels, cmap="RdBu_r")
-            ax_u.contour(x, x, W, levels=[0], colors="k", linewidths=0.5)
-            ax_u.set_title(f"undriven t={t_u[idx_u[j]]:.2f} ns")
-            ax_u.set_aspect("equal")
+    for panel_idx, (ax, (label, tval_ns, _rho), W) in enumerate(zip(axes, snapshots, w_list)):
+        tval_us = tval_ns / 1e3
+        cf = ax.contourf(x, x, W, levels=levels, cmap="RdBu_r")
+        if panel_idx == 0:
+            ax.set_title(f"$t={tval_us:.0f}\\,\\mu s$")
+            ax.set_ylabel("p")
         else:
-            ax_u.axis("off")
-
-        if j < len(idx_d):
-            W = w_d[j]
-            cf = ax_d.contourf(x, x, W, levels=levels, cmap="RdBu_r")
-            ax_d.contour(x, x, W, levels=[0], colors="k", linewidths=0.5)
-            ax_d.set_title(f"driven t={t_d[idx_d[j]]:.2f} ns")
-            ax_d.set_aspect("equal")
-        else:
-            ax_d.axis("off")
-
-        if j == 0:
-            ax_u.set_ylabel("p")
-            ax_d.set_ylabel("p")
-        ax_u.set_xlabel("q")
-        ax_d.set_xlabel("q")
+            ax.set_title(f"{label}, $t={tval_us:.0f}\\,\\mu s$")
+            ax.set_ylabel("")
+        ax.set_xlabel("q")
+        ax.set_aspect("equal")
+        style_mod.add_axis_arrows(ax)
 
     if cf is not None:
-        fig.colorbar(cf, ax=axes.ravel().tolist(), label="W(q,p)", shrink=0.9)
-    fig.suptitle("Cavity Wigner function: undriven (top) vs driven (bottom)")
+        fig.colorbar(cf, ax=axes.ravel().tolist(), label="W(q,p)", shrink=0.92, format="%.1f")
 
     if save_path is not None:
         out = Path(save_path)
@@ -410,6 +460,7 @@ def plot_wigner_10points_both(
 
 
 def main():
+    style_mod = _style_setup()
     parser = argparse.ArgumentParser(
         description="Plot cavity reduced Wigner function from averaged density-matrix data."
     )
@@ -465,7 +516,12 @@ def main():
     args = parser.parse_args()
 
     if args.save_path is None:
-        mode = "single" if args.single else "10points"
+        if args.single:
+            mode = "single"
+        elif args.case == "both":
+            mode = "3snapshots"
+        else:
+            mode = "10points"
         default_name = f"cavity_wigner_{mode}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
         save_path = Path(__file__).resolve().parent / default_name
     else:
@@ -521,10 +577,20 @@ def main():
                     per_snapshot_phase_correction=args.per_snapshot_phase_correction,
                 ),
             )
-            print(f"Plotting 10-point panel (both cases) from {Path(args.data).resolve()}")
-            plot_wigner_10points_both(
+
+            # Fidelity report at t=0 vs t≈300 us for both cases.
+            report_fidelity_t0_to_target_us(
+                undriven_data[0], undriven_data[1], case_label="Undriven", target_us=300.0
+            )
+            report_fidelity_t0_to_target_us(
+                driven_data[0], driven_data[1], case_label="Driven", target_us=300.0
+            )
+
+            print(f"Plotting three requested snapshots (both cases) from {Path(args.data).resolve()}")
+            plot_wigner_three_snapshots(
                 undriven_data=undriven_data,
                 driven_data=driven_data,
+                style_mod=style_mod,
                 xlim=args.xlim,
                 grid=args.grid,
                 save_path=save_path,
