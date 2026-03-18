@@ -3,6 +3,7 @@ import os
 import pickle
 from pathlib import Path
 
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import qutip as qt
@@ -10,12 +11,12 @@ from qutip import matrix_histogram
 from joblib import Parallel, delayed
 
 import sys
-sys.path.insert(0, "/Users/yunwei/Desktop/project/cavity dephasing/SNAIL/full_simulation copy/dual_rail/single_dual_rial")
+sys.path.insert(0, "/home/yunwei/SNAIL/full_simulation copy/dual_rail/single_dual_rial")
 from noise_generator import GenerateNoise
 
-sys.path.insert(0, "/Users/yunwei/Desktop/project/cavity dephasing/SNAIL/full_simulation copy/dual_rail/two_dual_rails")
+sys.path.insert(0, "/home/yunwei/SNAIL/full_simulation copy/dual_rail/two_dual_rails")
 from importlib.machinery import SourceFileLoader
-twodualrail = SourceFileLoader("2dualrail", "/Users/yunwei/Desktop/project/cavity dephasing/SNAIL/full_simulation copy/dual_rail/two_dual_rails/2dualrail.py").load_module()
+twodualrail = SourceFileLoader("2dualrail", "/home/yunwei/SNAIL/full_simulation copy/dual_rail/two_dual_rails/2dualrail.py").load_module()
 
 
 def basis_index(t, c2, c1, c3, c4, trunc_dim):
@@ -71,10 +72,12 @@ def build_initial_state(trunc_dim):
     n_c3 = 2
     n_c4 = 2
     
+    # 00_LL = 0, 1, 1, 0, 0
     ket00 = qt.tensor(qt.basis(n_t, 0), qt.basis(n_c2, 1), qt.basis(n_c1, 1), qt.basis(n_c3, 0), qt.basis(n_c4, 0))
-    ket10 = qt.tensor(qt.basis(n_t, 0), qt.basis(n_c2, 1), qt.basis(n_c1, 0), qt.basis(n_c3, 1), qt.basis(n_c4, 0))
+    # 11_LL = 0, 0, 0, 1, 1
+    ket11 = qt.tensor(qt.basis(n_t, 0), qt.basis(n_c2, 0), qt.basis(n_c1, 0), qt.basis(n_c3, 1), qt.basis(n_c4, 1))
     
-    return (ket00 + ket10).unit()
+    return (ket00 + ket11).unit()
 
 def generate_noise_trajs(noise_t_max, noise_dt, num_realizations, S0):
     n_noise_samples = int(np.ceil(float(noise_t_max) / float(noise_dt)))
@@ -132,7 +135,9 @@ def perform_tomography_and_plot(rho_full, kets, title, filename):
     rho_logical = rho_logical / rho_logical.tr()
     
     labels = ["|00>", "|01>", "|10>", "|11>"]
-    fig, ax = matrix_histogram(rho_logical, labels, labels)
+    # Absolute value of the density matrix
+    rho_abs = qt.Qobj(np.abs(rho_logical.full()))
+    fig, ax = matrix_histogram(rho_abs, labels, labels)
     
     ax.set_title(title)
     ax.view_init(azim=-55, elev=45)
@@ -141,22 +146,90 @@ def perform_tomography_and_plot(rho_full, kets, title, filename):
     fig.savefig(plot_out, dpi=200, bbox_inches="tight")
     print(f"Saved logical tomography plot to: {plot_out}")
 
+
+def perform_case_comparison_triptych(case_data, initial_logical_rho, sim_time_ns, filename):
+    """Plot initial, undriven final, and driven final in one figure."""
+    labels = ["|00>", "|01>", "|10>", "|11>"]
+    rho_undriven = case_data["undriven"]["logical_rhos"][-1]
+    rho_driven = case_data["driven"]["logical_rhos"][-1]
+    t_us = sim_time_ns / 1000.0
+    panels = [
+        ("Initial", initial_logical_rho),
+        (f"Undriven Final (t={t_us:.0f} us)", rho_undriven),
+        (f"Driven Final (t={t_us:.0f} us)", rho_driven),
+    ]
+
+    fig = plt.figure(figsize=(13.2, 4.6))
+    axes = []
+
+    for panel_idx, (panel_title, panel_rho) in enumerate(panels):
+        ax = fig.add_subplot(1, 3, panel_idx + 1, projection="3d")
+        matrix_histogram(
+            panel_rho,
+            labels,
+            labels,
+            fig=fig,
+            ax=ax,
+            limits=[0.0, 0.5],
+            bar_style="abs",
+            color_style="abs",
+            color_limits=[0.0, 0.5],
+            cmap=mpl.cm.jet,
+            colorbar=False,
+        )
+        ax.set_title(panel_title)
+        ax.view_init(azim=-55, elev=45)
+        ax.set_zlim(0.0, 0.5)
+        axes.append(ax)
+
+    shared_norm = mpl.colors.Normalize(vmin=0.0, vmax=0.5)
+    shared_mappable = mpl.cm.ScalarMappable(norm=shared_norm, cmap=mpl.cm.jet)
+    shared_mappable.set_array([])
+    fig.subplots_adjust(wspace=0.2, right=0.87)
+    cax = fig.add_axes([0.89, 0.2, 0.015, 0.62])
+    cbar = fig.colorbar(shared_mappable, cax=cax)
+    cbar.set_label("Matrix element magnitude")
+
+    plot_out = Path(filename).resolve()
+    fig.savefig(plot_out, dpi=200, bbox_inches="tight")
+    print(f"Saved logical tomography triptych to: {plot_out}")
+
 def main():
     parser = argparse.ArgumentParser(description="Two Dual-rails dynamics")
-    parser.add_argument("--A-over-pi", type=float, default=10e-3, help="Drive amplitude")
-    parser.add_argument("--sim-time", type=float, default=60000.0, help="Simulation end time.")
+    parser.add_argument(
+        "--A-over-pi",
+        type=float,
+        default=10e-3,
+        help="Drive amplitude factor with A = (A-over-pi) * 2*pi (matches dual_raila).",
+    )
+    parser.add_argument("--sim-time", type=float, default=1.0, help="Simulation end time.")
     parser.add_argument("--num-time-points", type=int, default=10, help="Number of saved density-matrix points.")
     parser.add_argument("--num-realizations", type=int, default=20, help="Number of noise trajectories.")
     parser.add_argument("--S0", type=float, default=1e-5, help="Noise amplitude.")
     parser.add_argument("--noise-t-max", type=float, default=int(1e8), help="Tracking max time")
     parser.add_argument("--noise-dt", type=float, default=1000.0, help="Tracking dt")
-    parser.add_argument("--n-jobs", type=int, default=-1, help="Parallel processing.")
+    parser.add_argument(
+        "--n-jobs",
+        type=int,
+        default=-1,
+        help="Parallel processing workers. -1 uses auto mode with a safe cap.",
+    )
     parser.add_argument("--gamma-main", type=float, default=1 / (2e4), help="Decay main")
     parser.add_argument("--gamma-aux", type=float, default=5e-7, help="Decay aux")
+    parser.add_argument("--phi-ex", type=float, default=0.2, help="External flux bias used for dc/dPhi.")
+    parser.add_argument("--detuning-mhz", type=float, default=28.5, help="Drive detuning (MHz) for dc/dPhi.")
     args = parser.parse_args()
 
+    driven_A = args.A_over_pi * 2 * np.pi
+    dc1_dphi, dc2_dphi = twodualrail.compute_dc_dphi(
+        phi_ex=args.phi_ex, detuning_mhz=args.detuning_mhz, A=driven_A
+    )
+    print(
+        f"dc1/dPhi: {dc1_dphi:.6f} GHz/Phi0 | dc2/dPhi: {dc2_dphi:.6f} GHz/Phi0 "
+        f"(detuning={args.detuning_mhz:.1f} MHz, phi_ex={args.phi_ex:.3f})"
+    )
+
     ops_undriven = twodualrail.build_total_operators(A=0.0)
-    driven_A = args.A_over_pi * np.pi
     ops_driven = twodualrail.build_total_operators(A=driven_A)
     
     trunc_dim = ops_undriven.get("trunc_dim", [3, 2, 2])
@@ -164,12 +237,10 @@ def main():
     psi0 = build_initial_state(trunc_dim)
     dressed_undriven = build_dressed_subspace_from_h0(ops_undriven["H0_total"], trunc_dim)
     
-    print("Plotting Initial State Tomography...")
-    perform_tomography_and_plot(qt.ket2dm(psi0), dressed_undriven["dressed_kets"], "Initial State Tomography (t=0)", "tomo_initial.png")
-
     time_points = np.linspace(0.0, args.sim_time, int(args.num_time_points))
     trajs = generate_noise_trajs(args.noise_t_max, args.noise_dt, args.num_realizations, args.S0)
     
+    case_data = {}
     for case_name, ops, A in [("undriven", ops_undriven, 0.0), ("driven", ops_driven, driven_A)]:
         print(f"\n=== Simulating {case_name.upper()} Case ===")
         
@@ -198,15 +269,41 @@ def main():
                 rho_sum += rho_arr
         avg_rho_t = rho_sum / n_traj
         
-        rho_final_full = qt.Qobj(avg_rho_t[-1], dims=ops["H0_total"].dims)
-        
         dressed = build_dressed_subspace_from_h0(ops["H0_total"], trunc_dim)
-        perform_tomography_and_plot(
-            rho_final_full, 
-            dressed["dressed_kets"], 
-            f"Final State Tomography ({case_name}, t={args.sim_time/1000:.0f}us)", 
-            f"tomo_final_{case_name}.png"
-        )
+        
+        logical_rhos = []
+        
+        print("Collecting logical density matrices over time...")
+        for rho_arr in avg_rho_t:
+            rho_full = qt.Qobj(rho_arr, dims=ops["H0_total"].dims)
+            rho_logic = logical_density_from_full_rho(rho_full, dressed["dressed_kets"])
+            logical_rhos.append(rho_logic)
+
+        case_data[case_name] = {
+            "logical_rhos": logical_rhos,
+            "final_full_rho": qt.Qobj(avg_rho_t[-1], dims=ops["H0_total"].dims)
+        }
+        print(f"Final logical density matrix ({case_name}):")
+        print(logical_rhos[-1].full())
+
+        with open(f"final_data_{case_name}.pkl", "wb") as f:
+            pickle.dump({
+                "time_points": time_points,
+                "logical_rhos": logical_rhos,
+                "avg_rho_t_last": avg_rho_t[-1]
+            }, f)
+            print(f"Saved final data to final_data_{case_name}.pkl")
+
+    # Initial logical Bell state |Phi+> = (|00> + |11>) / sqrt(2)
+    psi_ideal_log = (qt.basis(4, 0) + qt.basis(4, 3)).unit()
+    rho_ideal_log = psi_ideal_log * psi_ideal_log.dag()
+    perform_case_comparison_triptych(
+        case_data,
+        rho_ideal_log,
+        args.sim_time,
+        "tomo_final_comparison.png",
+    )
 
 if __name__ == "__main__":
+    os.chdir(Path(__file__).resolve().parent)
     main()
