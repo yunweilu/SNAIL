@@ -1,0 +1,30 @@
+nohup: ignoring input
+dc1/dPhi: -0.003735 GHz/Phi0 | dc2/dPhi: 0.002965 GHz/Phi0 (detuning=28.5 MHz, phi_ex=0.200)
+
+=== Simulating UNDRIVEN Case ===
+Collecting logical density matrices over time...
+Final logical density matrix (undriven):
+[[ 0.50182199+0.j          0.        +0.j          0.        +0.j
+  -0.16026435+0.08123421j]
+ [ 0.        +0.j          0.        +0.j          0.        +0.j
+   0.        +0.j        ]
+ [ 0.        +0.j          0.        +0.j          0.        +0.j
+   0.        +0.j        ]
+ [-0.16026435-0.08123421j  0.        +0.j          0.        +0.j
+   0.49817801+0.j        ]]
+Saved final data to final_data_undriven.pkl
+
+=== Simulating DRIVEN Case ===
+Collecting logical density matrices over time...
+Final logical density matrix (driven):
+[[ 4.94628258e-01+2.83236294e-16j  1.47832613e-05-4.63177915e-05j
+  -5.77693808e-04+2.62650972e-04j  1.04080020e-01-4.65929873e-01j]
+ [ 1.47832613e-05+4.63177915e-05j  7.32101683e-03+2.65840312e-17j
+  -1.03946502e-03-5.59932717e-04j  3.72803168e-04+4.70398071e-05j]
+ [-5.77693808e-04-2.62650972e-04j -1.03946502e-03+5.59932717e-04j
+   4.22272156e-03-1.88937951e-18j -4.42089665e-05+8.61482959e-06j]
+ [ 1.04080020e-01+4.65929873e-01j  3.72803168e-04-4.70398071e-05j
+  -4.42089665e-05-8.61482959e-06j  4.93828004e-01+1.25336512e-17j]]
+Saved final data to final_data_driven.pkl
+Saved logical tomography triptych to: /home/yunwei/SNAIL/full_simulation copy/dual_rail/two_dual_rails/tomo_final_comparison.png
+Saved logical matrix plot to: /home/yunwei/SNAIL/full_simulation copy/dual_rail/two_dual_rails/tomo_initial_driven.png

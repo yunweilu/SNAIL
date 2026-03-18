@@ -25,24 +25,53 @@ def basis_index(t, c2, c1, c3, c4, trunc_dim):
     n_c4 = 2
     return t * (n_c2 * n_c1 * n_c3 * n_c4) + c2 * (n_c1 * n_c3 * n_c4) + c1 * (n_c3 * n_c4) + c3 * n_c4 + c4
 
-def build_dressed_subspace_from_h0(H0_total, trunc_dim):
-    H_arr = np.asarray(H0_total.full(), dtype=complex)
+def extract_dualrail_B(Op_total, trunc_dim):
+    """
+    Extracts subsystem B (t, c2, c4) by projecting the 5-mode operator onto the subspace
+    where c1=0 and c3=0.
+    """
+    n_t, n_c2, n_c1 = trunc_dim
+    n_c4 = 2
+    
+    dim_B = n_t * n_c2 * n_c4
+    Op_B_data = np.zeros((dim_B, dim_B), dtype=complex)
+    Op_full = Op_total.full()
+    
+    for tB_row in range(n_t):
+        for c2B_row in range(n_c2):
+            for c4B_row in range(n_c4):
+                row_full = basis_index(t=tB_row, c2=c2B_row, c1=0, c3=0, c4=c4B_row, trunc_dim=trunc_dim)
+                row_B = tB_row * (n_c2 * n_c4) + c2B_row * n_c4 + c4B_row
+                
+                for tB_col in range(n_t):
+                    for c2B_col in range(n_c2):
+                        for c4B_col in range(n_c4):
+                            col_full = basis_index(t=tB_col, c2=c2B_col, c1=0, c3=0, c4=c4B_col, trunc_dim=trunc_dim)
+                            col_B = tB_col * (n_c2 * n_c4) + c2B_col * n_c4 + c4B_col
+                            
+                            Op_B_data[row_B, col_B] = Op_full[row_full, col_full]
+                            
+    return qt.Qobj(Op_B_data, dims=[[n_t, n_c2, n_c4], [n_t, n_c2, n_c4]])
+
+
+def build_dressed_subspace_from_h0_B(H0_B, trunc_dim):
+    H_arr = np.asarray(H0_B.full(), dtype=complex)
     evals, U = np.linalg.eigh(H_arr)
     
     n_t, n_c2, n_c1 = trunc_dim
-
+    n_c4 = 2
+    
+    # Basis order is t, c2, c4
     label_to_index = {
-        "00_LL": basis_index(0, 1, 1, 0, 0, trunc_dim),
-        "01_LL": basis_index(0, 0, 1, 0, 1, trunc_dim),
-        "10_LL": basis_index(0, 1, 0, 1, 0, trunc_dim),
-        "11_LL": basis_index(0, 0, 0, 1, 1, trunc_dim),
+        "0_L": 0 * (n_c2 * n_c4) + 1 * n_c4 + 0, # t=0, c2=1, c4=0
+        "1_L": 0 * (n_c2 * n_c4) + 0 * n_c4 + 1, # t=0, c2=0, c4=1
     }
 
-    dims_ket = [[n_t, n_c2, n_c1, 2, 2], [1, 1, 1, 1, 1]]
+    dims_ket = [[n_t, n_c2, n_c4], [1, 1, 1]]
     dressed_kets = {}
     dressed_projectors = {}
-    used_cols = set()
     matched_cols = {}
+    used_cols = set()
     for lbl, bare_idx in label_to_index.items():
         if bare_idx >= U.shape[0]:
             continue
@@ -67,26 +96,26 @@ def build_dressed_subspace_from_h0(H0_total, trunc_dim):
         "matched_cols": matched_cols,
         "dressed_kets": dressed_kets,
         "dressed_projectors": dressed_projectors,
-        "labels": ["00_LL", "01_LL", "10_LL", "11_LL"],
+        "labels": ["0_L", "1_L"],
     }
 
-def build_initial_state(trunc_dim):
+def build_initial_state_B(trunc_dim):
     n_t, n_c2, n_c1 = trunc_dim
-    n_c3 = 2
     n_c4 = 2
     
-    # 00_LL = 0, 1, 1, 0, 0
-    ket00 = qt.tensor(qt.basis(n_t, 0), qt.basis(n_c2, 1), qt.basis(n_c1, 1), qt.basis(n_c3, 0), qt.basis(n_c4, 0))
-    # 11_LL = 0, 0, 0, 1, 1
-    ket11 = qt.tensor(qt.basis(n_t, 0), qt.basis(n_c2, 0), qt.basis(n_c1, 0), qt.basis(n_c3, 1), qt.basis(n_c4, 1))
+    # + state for logical qubit B
+    # 0_L = |0, 1, 0> in (t, c2, c4)
+    ket0 = qt.tensor(qt.basis(n_t, 0), qt.basis(n_c2, 1), qt.basis(n_c4, 0))
+    # 1_L = |0, 0, 1> in (t, c2, c4)
+    ket1 = qt.tensor(qt.basis(n_t, 0), qt.basis(n_c2, 0), qt.basis(n_c4, 1))
     
-    return (ket00 + ket11).unit()
+    return (ket0 + ket1).unit()
 
 
-def build_dressed_initial_state(dressed_kets, trunc_dim):
-    if "00_LL" in dressed_kets and "11_LL" in dressed_kets:
-        return (dressed_kets["00_LL"] + dressed_kets["11_LL"]).unit()
-    return build_initial_state(trunc_dim)
+def build_dressed_initial_state_B(trunc_dim, dressed_kets):
+    if "0_L" in dressed_kets and "1_L" in dressed_kets:
+        return (dressed_kets["0_L"] + dressed_kets["1_L"]).unit()
+    return build_initial_state_B(trunc_dim)
 
 def generate_noise_trajs(noise_t_max, noise_dt, num_realizations, S0):
     n_noise_samples = int(np.ceil(float(noise_t_max) / float(noise_dt)))
@@ -101,7 +130,7 @@ def generate_noise_trajs(noise_t_max, noise_dt, num_realizations, S0):
 
 def simulate_single_trajectory(traj_idx, raw_trajs, noise_dt, solver_nsteps, sds_total, H0_total, psi0, time_points, c_ops):
     opts = {
-        "nsteps": int(solver_nsteps),
+        "nsteps": int(5*solver_nsteps),
         "atol": 1e-12,
         "rtol": 1e-12,
         "progress_bar": False,
@@ -115,53 +144,25 @@ def simulate_single_trajectory(traj_idx, raw_trajs, noise_dt, solver_nsteps, sds
     rho_t = [st if st.isoper else qt.ket2dm(st) for st in result.states]
     return np.stack([rho.full() for rho in rho_t], axis=0)
 
-def logical_density_from_full_rho(rho_full, kets):
-    rho_logical_arr = np.zeros((4, 4), dtype=complex)
-    for i, lbl_i in enumerate(["00_LL", "01_LL", "10_LL", "11_LL"]):
-        for j, lbl_j in enumerate(["00_LL", "01_LL", "10_LL", "11_LL"]):
-            if lbl_i in kets and lbl_j in kets:
-                var1 = kets[lbl_i]
-                var2 = rho_full * kets[lbl_j]
-                val = var1.dag() * var2
-                
-                # Check if it was returned as a complex scalar or a Qobj
-                from numbers import Number
-                if isinstance(val, Number):
+def logical_density_from_full_rho(rho_full, dressed_kets):
+    rho_logical_arr = np.zeros((2, 2), dtype=complex)
+    labels = ["0_L", "1_L"]
+    for i, li in enumerate(labels):
+        for j, lj in enumerate(labels):
+            if li in dressed_kets and lj in dressed_kets:
+                val = dressed_kets[li].dag() * (rho_full * dressed_kets[lj])
+                if isinstance(val, qt.Qobj):
+                    rho_logical_arr[i, j] = val.full()[0, 0]
+                else:
                     rho_logical_arr[i, j] = complex(val)
-                elif hasattr(val, "tr"):
-                    # Typically a Qobj trace will give you the inner product if dims align 
-                    # but depending on dims Qobj can hold [[val]]
-                    rho_logical_arr[i, j] = complex(val.full()[0, 0] if val.shape == (1,1) else val.tr())
-                else: 
-                     rho_logical_arr[i, j] = complex(val)
-                     
-    rho_logical = qt.Qobj(rho_logical_arr, dims=[[4], [4]])
+    rho_logical = qt.Qobj(rho_logical_arr, dims=[[2], [2]])
     if np.abs(rho_logical.tr()) > 0:
         rho_logical = rho_logical / rho_logical.tr()
     return rho_logical
 
-def perform_tomography_and_plot(rho_full, kets, title, filename):
-    rho_logical = logical_density_from_full_rho(rho_full, kets)
-    
-    # Trace over internal degrees of freedom
-    rho_logical = rho_logical / rho_logical.tr()
-    
-    labels = ["|00>", "|01>", "|10>", "|11>"]
-    # Absolute value of the density matrix
-    rho_abs = qt.Qobj(np.abs(rho_logical.full()))
-    fig, ax = matrix_histogram(rho_abs, labels, labels)
-    
-    ax.set_title(title)
-    ax.view_init(azim=-55, elev=45)
-    plt.tight_layout()
-    plot_out = Path(filename).resolve()
-    fig.savefig(plot_out, dpi=200, bbox_inches="tight")
-    print(f"Saved logical tomography plot to: {plot_out}")
-
-
 def perform_case_comparison_triptych(case_data, initial_logical_rho, sim_time_ns, filename):
     """Plot initial, undriven final, and driven final in one figure."""
-    labels = ["|00>", "|01>", "|10>", "|11>"]
+    labels = ["|01>", "|10>"]
     rho_undriven = case_data["undriven"]["logical_rhos"][-1]
     rho_driven = case_data["driven"]["logical_rhos"][-1]
     t_us = sim_time_ns / 1000.0
@@ -170,7 +171,6 @@ def perform_case_comparison_triptych(case_data, initial_logical_rho, sim_time_ns
         (f"Undriven Final (t={t_us:.0f} us)", rho_undriven),
         (f"Driven Final (t={t_us:.0f} us)", rho_driven),
     ]
-
     fig = plt.figure(figsize=(13.2, 4.6))
     axes = []
 
@@ -207,47 +207,13 @@ def perform_case_comparison_triptych(case_data, initial_logical_rho, sim_time_ns
     fig.savefig(plot_out, dpi=200, bbox_inches="tight")
     print(f"Saved logical tomography triptych to: {plot_out}")
 
-
-def plot_single_logical_matrix(rho_logical, title, filename):
-    """Plot one 4x4 logical density matrix (absolute values) with shared style."""
-    labels = ["|00>", "|01>", "|10>", "|11>"]
-    rho_abs = qt.Qobj(np.abs(rho_logical.full()), dims=rho_logical.dims)
-    fig = plt.figure(figsize=(5.0, 4.6))
-    ax = fig.add_subplot(1, 1, 1, projection="3d")
-    matrix_histogram(
-        rho_abs,
-        labels,
-        labels,
-        fig=fig,
-        ax=ax,
-        limits=[0.0, 0.5],
-        bar_style="abs",
-        color_style="abs",
-        color_limits=[0.0, 0.5],
-        cmap=mpl.cm.jet,
-        colorbar=False,
-    )
-    ax.set_title(title)
-    ax.view_init(azim=-55, elev=45)
-    ax.set_zlim(0.0, 0.5)
-    shared_norm = mpl.colors.Normalize(vmin=0.0, vmax=0.5)
-    shared_mappable = mpl.cm.ScalarMappable(norm=shared_norm, cmap=mpl.cm.jet)
-    shared_mappable.set_array([])
-    fig.subplots_adjust(right=0.86)
-    cax = fig.add_axes([0.88, 0.18, 0.03, 0.64])
-    cbar = fig.colorbar(shared_mappable, cax=cax)
-    cbar.set_label("Matrix element magnitude")
-    plot_out = Path(filename).resolve()
-    fig.savefig(plot_out, dpi=200, bbox_inches="tight")
-    print(f"Saved logical matrix plot to: {plot_out}")
-
 def main():
-    parser = argparse.ArgumentParser(description="Two Dual-rails dynamics")
+    parser = argparse.ArgumentParser(description="Dual-rail B dynamics")
     parser.add_argument(
         "--A-over-pi",
         type=float,
         default=10e-3,
-        help="Drive amplitude factor with A = (A-over-pi) * 2*pi (matches dual_raila).",
+        help="Drive amplitude factor with A = (A-over-pi) * 2*pi (matches static_sweep).",
     )
     parser.add_argument("--sim-time", type=float, default=60000.0, help="Simulation end time.")
     parser.add_argument("--num-time-points", type=int, default=10, help="Number of saved density-matrix points.")
@@ -255,55 +221,69 @@ def main():
     parser.add_argument("--S0", type=float, default=1e-5, help="Noise amplitude.")
     parser.add_argument("--noise-t-max", type=float, default=int(1e8), help="Tracking max time")
     parser.add_argument("--noise-dt", type=float, default=1000.0, help="Tracking dt")
-    parser.add_argument(
-        "--n-jobs",
-        type=int,
-        default=-1,
-        help="Parallel processing workers. -1 uses auto mode with a safe cap.",
-    )
+    parser.add_argument("--n-jobs", type=int, default=-1, help="Parallel processing.")
     parser.add_argument("--gamma-main", type=float, default=1 / (2e4), help="Decay main")
     parser.add_argument("--gamma-aux", type=float, default=5e-7, help="Decay aux")
     parser.add_argument("--phi-ex", type=float, default=0.2, help="External flux bias used for dc/dPhi.")
     parser.add_argument("--detuning-mhz", type=float, default=28.5, help="Drive detuning (MHz) for dc/dPhi.")
     args = parser.parse_args()
 
+    # We build the 5-mode Hamiltonian first
+    ops_undriven_full = twodualrail.build_total_operators(A=0.0)
     driven_A = args.A_over_pi * 2 * np.pi
-    dc1_dphi, dc2_dphi = twodualrail.compute_dc_dphi(
-        phi_ex=args.phi_ex, detuning_mhz=args.detuning_mhz, A=driven_A
-    )
-    print(
-        f"dc1/dPhi: {dc1_dphi:.6f} GHz/Phi0 | dc2/dPhi: {dc2_dphi:.6f} GHz/Phi0 "
-        f"(detuning={args.detuning_mhz:.1f} MHz, phi_ex={args.phi_ex:.3f})"
-    )
+    ops_driven_full = twodualrail.build_total_operators(A=driven_A)
+    
+    trunc_dim = ops_undriven_full.get("trunc_dim", [3, 2, 2])
+    
+    # psi0_B_full = build_initial_state_B(trunc_dim)
+    # perform_tomography_and_plot(
+    #     qt.ket2dm(psi0_B_full),
+    #     "Initial State Tomography B",
+    #     "tomo_initial_B.png"
+    # )
 
-    ops_undriven = twodualrail.build_total_operators(A=0.0)
-    ops_driven = twodualrail.build_total_operators(A=driven_A)
-    
-    trunc_dim = ops_undriven.get("trunc_dim", [3, 2, 2])
-    
     time_points = np.linspace(0.0, args.sim_time, int(args.num_time_points))
     trajs = generate_noise_trajs(args.noise_t_max, args.noise_dt, args.num_realizations, args.S0)
     
     case_data = {}
-    for case_name, ops, A in [("undriven", ops_undriven, 0.0), ("driven", ops_driven, driven_A)]:
-        print(f"\n=== Simulating {case_name.upper()} Case ===")
+    for case_name, ops_full, A in [("undriven", ops_undriven_full, 0.0), ("driven", ops_driven_full, driven_A)]:
+        print(f"\n=== Simulating Dual-Rail B {case_name.upper()} Case ===")
+        dc1_dphi, dc2_dphi = twodualrail.compute_dc_dphi(
+            phi_ex=args.phi_ex, detuning_mhz=args.detuning_mhz, A=A
+        )
+        print(
+            f"dc1/dPhi: {dc1_dphi:.6f} GHz/Phi0 | dc2/dPhi: {dc2_dphi:.6f} GHz/Phi0 "
+            f"(detuning={args.detuning_mhz:.1f} MHz, phi_ex={args.phi_ex:.3f})"
+        )
+        print(
+            f"Dual-rail B mapping: rail-1(c3)={dc1_dphi:.6f} GHz/Phi0, "
+            f"rail-2(c4)={dc2_dphi:.6f} GHz/Phi0 (by symmetry with c1/c2)"
+        )
         
-        dressed = build_dressed_subspace_from_h0(ops["H0_total"], trunc_dim)
-        psi0 = build_dressed_initial_state(dressed["dressed_kets"], trunc_dim)
+        # Truncate operators to Dual-Rail B
+        ops_B = {
+            "H0_total": extract_dualrail_B(ops_full["H0_total"], trunc_dim),
+            "sds_total": extract_dualrail_B(ops_full["sds_total"], trunc_dim),
+            "sop_total": extract_dualrail_B(ops_full["sop_total"], trunc_dim),
+            "c2op_total": extract_dualrail_B(ops_full["c2op_total"], trunc_dim),
+            "a_c4_total": extract_dualrail_B(ops_full["a_c4_total"], trunc_dim),
+        }
 
-        c_ops = [
-            np.sqrt(args.gamma_main) * ops["sop_total"],
-            np.sqrt(args.gamma_main) * ops["c1op_total"],
-            np.sqrt(args.gamma_main) * ops["c2op_total"],
-            np.sqrt(args.gamma_aux) * ops["a_c3_total"],
-            np.sqrt(args.gamma_aux) * ops["a_c4_total"],
+        dressed_B = build_dressed_subspace_from_h0_B(ops_B["H0_total"], trunc_dim)
+        psi0_B = build_dressed_initial_state_B(trunc_dim, dressed_B["dressed_kets"])
+        
+        c_ops_B = [
+            np.sqrt(args.gamma_main) * ops_B["sop_total"],
+            np.sqrt(args.gamma_main) * ops_B["c2op_total"],
+            np.sqrt(args.gamma_aux) * ops_B["a_c4_total"]
+            # Note: We omit c1op and a_c3 because they act on dual-rail A
         ]
         
         n_traj = len(trajs)
         results = Parallel(n_jobs=args.n_jobs)(
             delayed(simulate_single_trajectory)(
                 i, trajs, args.noise_dt, 100000,
-                ops["sds_total"], ops["H0_total"], psi0, time_points, c_ops,
+                ops_B["sds_total"], ops_B["H0_total"], psi0_B, time_points, c_ops_B,
             )
             for i in range(n_traj)
         )
@@ -320,37 +300,30 @@ def main():
         
         print("Collecting logical density matrices over time...")
         for rho_arr in avg_rho_t:
-            rho_full = qt.Qobj(rho_arr, dims=ops["H0_total"].dims)
-            rho_logic = logical_density_from_full_rho(rho_full, dressed["dressed_kets"])
+            rho_full = qt.Qobj(rho_arr, dims=ops_B["H0_total"].dims)
+            rho_logic = logical_density_from_full_rho(rho_full, dressed_B["dressed_kets"])
             logical_rhos.append(rho_logic)
 
         case_data[case_name] = {
             "logical_rhos": logical_rhos,
-            "final_full_rho": qt.Qobj(avg_rho_t[-1], dims=ops["H0_total"].dims)
+            "final_full_rho": qt.Qobj(avg_rho_t[-1], dims=ops_B["H0_total"].dims)
         }
-        print(f"Final logical density matrix ({case_name}):")
-        print(logical_rhos[-1].full())
-
-        with open(f"final_data_{case_name}.pkl", "wb") as f:
+        
+        with open(f"final_data_B_{case_name}.pkl", "wb") as f:
             pickle.dump({
                 "time_points": time_points,
                 "logical_rhos": logical_rhos,
                 "avg_rho_t_last": avg_rho_t[-1]
             }, f)
-            print(f"Saved final data to final_data_{case_name}.pkl")
+            print(f"Saved final data to final_data_B_{case_name}.pkl")
 
+    initial_logical_rho = case_data["driven"]["logical_rhos"][0]
     perform_case_comparison_triptych(
         case_data,
-        case_data["driven"]["logical_rhos"][0],
+        initial_logical_rho,
         args.sim_time,
-        "tomo_final_comparison.png",
-    )
-    plot_single_logical_matrix(
-        case_data["driven"]["logical_rhos"][0],
-        "Driven Initial (Dressed Logical Matrix)",
-        "tomo_initial_driven.png",
+        "tomo_final_B_comparison.png",
     )
 
 if __name__ == "__main__":
-    os.chdir(Path(__file__).resolve().parent)
     main()

@@ -84,7 +84,7 @@ def _compute_norm_from_model(data=None):
     def build(phi):
         sc = Hamiltonian(phi, Ej, Ec, bare_dim, trunc_dim, omega_c1, omega_c2)
         sc.g = g_val
-        sc.H, sc.H_control, sc.H_flux_drive = sc.get_H()
+        sc.H, sc.H_control, sc.H_flux_drive, sc.noise, sc.s = sc.get_H()
         sc.H_dressed, sc.H_control_dressed, sc.H_flux_drive_dressed = sc.dressed_basis()
         return sc
 

@@ -5,9 +5,52 @@ import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from system import Hamiltonian
 
+DEFAULT_DRIVE_A = 10e-3 * 2 * np.pi  # Keep amplitude convention aligned with static_sweep.py.
+
 
 def annihilation(dim):
     return np.diag(np.sqrt(np.arange(1, dim)), 1)
+
+
+def compute_dc_dphi(phi_ex=0.2, detuning_mhz=29.0, A=None):
+    """
+    Compute d(c1)/dPhi and d(c2)/dPhi via central finite-difference,
+    following the same method as static_sweep.py.
+    """
+    Ej = 30.19
+    Ec = 0.1
+    omega_c1 = 5.226
+    omega_c2 = 7.335
+    bare_dim = [10, 6, 6]
+    trunc_dim = [5, 2, 2]
+    g_val = 0.05 * 2 * np.pi
+    if A is None:
+        A = DEFAULT_DRIVE_A
+    delta_phi = 1e-6
+
+    def build(phi):
+        sc = Hamiltonian(phi, Ej, Ec, bare_dim, trunc_dim, omega_c1, omega_c2)
+        sc.g = g_val
+        sc.H, sc.H_control, sc.H_flux_drive, sc.noise, sc.s = sc.get_H()
+        sc.H_dressed, sc.H_control_dressed, sc.H_flux_drive_dressed = sc.dressed_basis()
+        return sc
+
+    sc0 = build(phi_ex)
+    dim = sc0.original_dim
+    idx_0 = sc0.state_index((0, 0, 0), dim)
+    idx_b = sc0.state_index((1, 0, 0), dim)
+    omega_q = sc0.H_dressed[idx_b, idx_b].real - sc0.H_dressed[idx_0, idx_0].real
+    omega_drive = omega_q + (detuning_mhz * 1e-3) * 2 * np.pi
+
+    sc_p = build(phi_ex + delta_phi)
+    sc_m = build(phi_ex - delta_phi)
+    E_c1_p, E_c2_p = sc_p.quasi_energy(A, omega_drive)
+    E_c1_m, E_c2_m = sc_m.quasi_energy(A, omega_drive)
+
+    dc1_dphi = (E_c1_p - E_c1_m) / (2 * delta_phi) / (2 * np.pi)
+    dc2_dphi = (E_c2_p - E_c2_m) / (2 * delta_phi) / (2 * np.pi)
+    return float(dc1_dphi), float(dc2_dphi)
+
 
 def build_tc_operators(A):
     Ej = 30.19
@@ -29,7 +72,7 @@ def build_tc_operators(A):
     idx_b = sc.state_index((1, 0, 0), dim)
     omega_q = sc.H_dressed[idx_b, idx_b].real - sc.H_dressed[idx_0, idx_0].real
     
-    detuning_mhz = 28.4
+    detuning_mhz = 28.5
     optimal_omega = omega_q + (detuning_mhz * 1e-3) * 2 * np.pi
 
     approx_ops = sc.get_approximate_H(A, optimal_omega)
@@ -84,7 +127,7 @@ def build_total_operators(A, n_aux3=2, n_aux4=2):
     }
 
 def main():
-    A = 10e-3 * 2 * np.pi
+    A = DEFAULT_DRIVE_A
     print("Building total operators for 2 dual-rails scenario...")
     ops = build_total_operators(A=A, n_aux3=2, n_aux4=2)
     
@@ -98,6 +141,25 @@ def main():
     print(f"a_c4_total dims: {ops['a_c4_total'].dims}")
     
     print("\nThey are correctly populated and mapped into qutip Qobjs!")
+    
+    # Print the full H0_total as requested
+    np.set_printoptions(threshold=sys.maxsize, linewidth=200, precision=4, suppress=True)
+    H0_arr = ops['H0_total'].full()
+    print("\n=== H0_total (Driven Case, A != 0) ===")
+    print("Non-zero elements count:", np.count_nonzero(H0_arr))
+    print(H0_arr)
+
+    # Quasi-energy derivatives at default detuning.
+    dc1_dphi, dc2_dphi = compute_dc_dphi(phi_ex=0.2, detuning_mhz=29.0)
+    print("\n=== Quasi-energy Derivatives (detuning = 29 MHz) ===")
+    print(f"dc1/dPhi: {dc1_dphi:.6f} GHz/Phi0 | dc2/dPhi: {dc2_dphi:.6f} GHz/Phi0")
+    print("\n=== Dual-Rail Mapping ===")
+    print(f"Dual-rail A: rail-1 (c1) -> {dc1_dphi:.6f} GHz/Phi0, rail-2 (c2) -> {dc2_dphi:.6f} GHz/Phi0")
+    print(
+        "Dual-rail B: rail-1 (c3), rail-2 (c4). "
+        "In this script c3/c4 are auxiliary modes; if B is identical to A, "
+        "use the same derivative values by symmetry."
+    )
 
 if __name__ == "__main__":
     main()
